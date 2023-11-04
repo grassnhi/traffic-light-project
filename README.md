@@ -17,6 +17,4 @@
  + D5 - YELLOW. (PB4)
  + D6 - GREEN. (PB5)
 
-Timer:
-Timer 3 - 10ms
-Timer 2 - 10ms
+Timer: timer 3 - 10ms, timer 2 - 10ms
