@@ -60,9 +60,9 @@ void Error_Handler(void);
 
 /*
  * Button using for traffic light
- * A1 - button 1
- * A2 - button 2
- * A3 - button 3
+ * A1 - button 1 (PA1)
+ * A2 - button 2 (PA4)
+ * A3 - button 3 (PB0)
  */
 #define A1_Pin 			GPIO_PIN_1
 #define A1_GPIO_Port 	GPIOA
@@ -73,10 +73,10 @@ void Error_Handler(void);
 
 /*
  * Pedestrian mode
- * A0 - button for pedestrian.
- * D7 - pedestrian light - red.
- * D8 - pedestrian light - green.
- * D12 - Pedestrian Buzzer.
+ * A0 - button for pedestrian. (PA0)
+ * D7 - pedestrian light - red. (PA8)
+ * D8 - pedestrian light - green. (PB10)
+ * D12 - Pedestrian Buzzer. (PA6)
  */
 #define A0_Pin 			GPIO_PIN_0
 #define A0_GPIO_Port 	GPIOA
@@ -89,29 +89,29 @@ void Error_Handler(void);
 
 /*
  * Traffic light 1
- * D1 - RED
- * D2 - YELLOW
- * D3 - GREEN
+ * D1 - RED. (PA9)
+ * D2 - YELLOW. (PA10)
+ * D3 - GREEN. (PA11)
  */
-#define D1_Pin GPIO_PIN_9
-#define D1_GPIO_Port GPIOA
-#define D2_Pin GPIO_PIN_10
-#define D2_GPIO_Port GPIOA
-#define D3_Pin GPIO_PIN_11
-#define D3_GPIO_Port GPIOA
+#define D1_Pin 			GPIO_PIN_9
+#define D1_GPIO_Port 	GPIOA
+#define D2_Pin 			GPIO_PIN_10
+#define D2_GPIO_Port 	GPIOA
+#define D3_Pin 			GPIO_PIN_11
+#define D3_GPIO_Port 	GPIOA
 
 /*
- * Traffic light 2
- * D4 - RED
- * D5 - YELLOW
- * D6 - GREEN
+ * Traffic light 1
+ * D4 - RED. (PA9)
+ * D5 - YELLOW. (PA10)
+ * D6 - GREEN. (PA11)
  */
-#define D4_Pin GPIO_PIN_3
-#define D4_GPIO_Port GPIOB
-#define D5_Pin GPIO_PIN_4
-#define D5_GPIO_Port GPIOB
-#define D6_Pin GPIO_PIN_5
-#define D6_GPIO_Port GPIOB
+#define D4_Pin 			GPIO_PIN_3
+#define D4_GPIO_Port 	GPIOB
+#define D5_Pin 			GPIO_PIN_4
+#define D5_GPIO_Port 	GPIOB
+#define D6_Pin 			GPIO_PIN_5
+#define D6_GPIO_Port 	GPIOB
 
 /* USER CODE BEGIN Private defines */
 
