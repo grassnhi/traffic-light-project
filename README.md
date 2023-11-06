@@ -1,7 +1,7 @@
 # Traffic Light Project
 
 ## Finite State Machine
-![FSM](.\Materials\fsm.png)
+![FSM](https://github.com/grassnhi/traffic-light-project/blob/main/Materials/fsm.png)
 
 
 ## Button using for traffic light
