@@ -5,8 +5,8 @@
  *      Author: PC
  */
 
+#include <usart.h>
 #include "stdio.h"
-#include "USART.h"
 #include "global.h"
 
 void displayUART(int counter, UART_HandleTypeDef huart2) {

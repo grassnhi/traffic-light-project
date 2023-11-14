@@ -47,6 +47,9 @@ extern int RED;
 extern int AMBER;
 extern int GREEN;
 
+extern int red_counter;
+extern int green_counter;
+
 extern char str[50];
 extern uint8_t temp;
 

@@ -18,8 +18,8 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <usart.h>
 #include "main.h"
-#include "USART.h"
 #include "global.h"
 #include "displayLED.h"
 #include "input_reading.h"
