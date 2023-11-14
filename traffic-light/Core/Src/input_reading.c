@@ -37,13 +37,16 @@ void button_reading(void) {
         debounceButtonBuffer2[i] = debounceButtonBuffer1[i];
         switch (i) {
             case 0:
-                debounceButtonBuffer1[i] = HAL_GPIO_ReadPin(MODE_GPIO_Port, MODE_Pin);
+                debounceButtonBuffer1[i] = HAL_GPIO_ReadPin(BT0_GPIO_Port, BT0_Pin);
                 break;
             case 1:
-                debounceButtonBuffer1[i] = HAL_GPIO_ReadPin(ADJ_GPIO_Port, ADJ_Pin);
+                debounceButtonBuffer1[i] = HAL_GPIO_ReadPin(BT1_GPIO_Port, BT1_Pin);
                 break;
             case 2:
-                debounceButtonBuffer1[i] = HAL_GPIO_ReadPin(SET_GPIO_Port, SET_Pin);
+                debounceButtonBuffer1[i] = HAL_GPIO_ReadPin(BT2_GPIO_Port, BT2_Pin);
+                break;
+            case 3: 
+                debounceButtonBuffer1[i] = HAL_GPIO_ReadPin(BT3_GPIO_Port, BT3_Pin);
                 break;
             default:
                 break;

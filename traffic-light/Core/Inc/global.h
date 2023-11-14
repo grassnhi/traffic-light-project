@@ -8,6 +8,8 @@
 #ifndef INC_GLOBAL_H_
 #define INC_GLOBAL_H_
 
+#include "main.h"
+
 #define INIT				0
 
 #define MODE1				1
@@ -28,8 +30,9 @@
 #define AUTO_GREEN			33
 #define ADJ_GREEN			34
 
-#define PED_GREEN			41
-#define PED_RED				42
+#define PED_OFF             41
+#define PED_GREEN			42
+#define PED_RED				43
 
 #define GREEN1			    51
 #define AMBER1			    52
@@ -37,6 +40,7 @@
 #define	AMBER2			    54
 
 extern int status;
+extern int ped_status;
 extern int current_state;
 
 extern int RED;

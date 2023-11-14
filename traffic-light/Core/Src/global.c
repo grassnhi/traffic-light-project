@@ -8,6 +8,7 @@
 #include "global.h"
 
 int status = INIT;
+int ped_status = INIT;
 
 int RED = 5;
 int YELLOW = 2;
