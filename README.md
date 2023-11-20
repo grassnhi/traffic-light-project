@@ -30,7 +30,7 @@
  * Amber: 11
 
 ## Timer: 
- * timer_2: 10ms, 
+ * timer_2: 1ms, 
  * timer_3: 1s.
 
 ## Button:
