@@ -18,25 +18,25 @@ void traffic_light(int color) {
             HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, RESET);
             HAL_GPIO_WritePin(TLIGHT22_GPIO_Port, TLIGHT22_Pin, RESET);
 			break;
-		case RED1_GREEN2:
+		case GREEN2:
 			HAL_GPIO_WritePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT12_GPIO_Port, TLIGHT12_Pin, RESET);
             HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, RESET);
             HAL_GPIO_WritePin(TLIGHT22_GPIO_Port, TLIGHT22_Pin, SET);
 			break;
-		case RED1_AMBER2:
+		case AMBER2:
             HAL_GPIO_WritePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT12_GPIO_Port, TLIGHT12_Pin, RESET);
             HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT22_GPIO_Port, TLIGHT22_Pin, SET);
 			break;
-		case GREEN1_RED2:
+		case GREEN1:
 			HAL_GPIO_WritePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin, RESET);
             HAL_GPIO_WritePin(TLIGHT12_GPIO_Port, TLIGHT12_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT22_GPIO_Port, TLIGHT22_Pin, RESET);
 			break;
-        case AMBER1_RED2:
+        case AMBER1:
 			HAL_GPIO_WritePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT12_GPIO_Port, TLIGHT12_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, SET);

@@ -10,6 +10,10 @@
 
 #include "main.h"
 
-void displayUART(int counter, UART_HandleTypeDef huart2);
+//UART_HandleTypeDef huart2;
+
+void displayUART1(int counter, UART_HandleTypeDef huart2);
+
+void displayUART2(int counter, UART_HandleTypeDef huart2);
 
 #endif /* INC_USART_H_ */
