@@ -5,7 +5,7 @@
  *      Author: PC
  */
 
-#include "global.h"
+#include "main.h"
 
 int status = INIT;
 int ped_status = INIT;

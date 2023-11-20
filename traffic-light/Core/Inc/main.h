@@ -18,7 +18,11 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
-
+#include "usart.h"
+#include "global.h"
+#include "displayLED.h"
+#include "input_reading.h"
+#include "software_timer.h"
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __MAIN_H
 #define __MAIN_H

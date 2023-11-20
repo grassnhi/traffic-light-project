@@ -7,7 +7,6 @@
 C_SRCS += \
 ../Core/Src/displayLED.c \
 ../Core/Src/global.c \
-../Core/Src/input_processing.c \
 ../Core/Src/input_reading.c \
 ../Core/Src/main.c \
 ../Core/Src/software_timer.c \
@@ -21,7 +20,6 @@ C_SRCS += \
 OBJS += \
 ./Core/Src/displayLED.o \
 ./Core/Src/global.o \
-./Core/Src/input_processing.o \
 ./Core/Src/input_reading.o \
 ./Core/Src/main.o \
 ./Core/Src/software_timer.o \
@@ -35,7 +33,6 @@ OBJS += \
 C_DEPS += \
 ./Core/Src/displayLED.d \
 ./Core/Src/global.d \
-./Core/Src/input_processing.d \
 ./Core/Src/input_reading.d \
 ./Core/Src/main.d \
 ./Core/Src/software_timer.d \

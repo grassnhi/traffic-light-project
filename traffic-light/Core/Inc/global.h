@@ -13,10 +13,10 @@
 #define INIT				0
 
 #define MODE1				1
-#define AUTO_RED1_GREEN2	11
-#define AUTO_RED1_AMBER2	12
-#define AUTO_GREEN1_RED2	13
-#define	AUTO_AMBER1_RED2	14
+#define RED1_GREEN2	        11
+#define RED1_AMBER2	        12
+#define GREEN1_RED2	        13
+#define	AMBER1_RED2	        14
 
 #define MODE2				2
 #define MAN_GREEN1			21

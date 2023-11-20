@@ -5,9 +5,9 @@
  *      Author: PC
  */
 
-#include <usart.h>
+
 #include "stdio.h"
-#include "global.h"
+#include "main.h"
 
 void displayUART(int counter, UART_HandleTypeDef huart2) {
 	int t = counter / 10;

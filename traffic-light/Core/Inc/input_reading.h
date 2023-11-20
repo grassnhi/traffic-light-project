@@ -12,11 +12,22 @@
 #include "software_timer.h"
 #include "global.h"
 
-int check_button_pressed(int i);
+#define NORMAL_STATE SET
+#define PRESSED_STATE RESET
+#define NO_OF_BUTTONS 4
+extern int button1_flag[NO_OF_BUTTONS];
 
-void button_reading(void);
 
-unsigned char is_button_pressed(unsigned char index);
-unsigned char is_button_pressed_1s(unsigned char index);
+void getKeyInput();
+
+/*
+ * @param index
+ * 0 - button 0
+ * 1 - button 1
+ * 2 - button 2
+ * 3 - button 3
+ * this function return 1 if the button is pressed.
+ */
+int isButtonPressed(int index);
 
 #endif /* INC_INPUT_READING_H_ */

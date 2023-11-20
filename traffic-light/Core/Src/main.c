@@ -18,13 +18,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include <usart.h>
 #include "main.h"
-#include "global.h"
-#include "displayLED.h"
-#include "input_reading.h"
-#include "software_timer.h"
-#include "input_processing.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 

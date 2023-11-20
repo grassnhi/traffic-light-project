@@ -5,7 +5,7 @@
  *      Author: PC
  */
 
-#include "displayLED.h"
+#include "main.h"
 
 void toggle_red() {
 	
@@ -18,25 +18,25 @@ void traffic_light(int color) {
             HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, RESET);
             HAL_GPIO_WritePin(TLIGHT22_GPIO_Port, TLIGHT22_Pin, RESET);
 			break;
-		case AUTO_RED1_GREEN2:
+		case RED1_GREEN2:
 			HAL_GPIO_WritePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT12_GPIO_Port, TLIGHT12_Pin, RESET);
             HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, RESET);
             HAL_GPIO_WritePin(TLIGHT22_GPIO_Port, TLIGHT22_Pin, SET);
 			break;
-		case AUTO_RED1_AMBER2:
+		case RED1_AMBER2:
             HAL_GPIO_WritePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT12_GPIO_Port, TLIGHT12_Pin, RESET);
             HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT22_GPIO_Port, TLIGHT22_Pin, SET);
 			break;
-		case AUTO_GREEN1_RED2:
+		case GREEN1_RED2:
 			HAL_GPIO_WritePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin, RESET);
             HAL_GPIO_WritePin(TLIGHT12_GPIO_Port, TLIGHT12_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT22_GPIO_Port, TLIGHT22_Pin, RESET);
 			break;
-        case AUTO_AMBER1_RED2:
+        case AMBER1_RED2:
 			HAL_GPIO_WritePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT12_GPIO_Port, TLIGHT12_Pin, SET);
             HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, SET);

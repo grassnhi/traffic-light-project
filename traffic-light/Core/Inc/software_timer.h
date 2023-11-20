@@ -12,8 +12,7 @@
 // Timer 0: AUTO mode				
 // Timer 1: PEDESTRIAN
 // Timer 2: UART (Mode1)
-// Timer 3: UpdateBuffer
-// Timer 4: Blinking
+// Timer 3: Blinking
 
 extern int TIME_CYCLE;					
 
