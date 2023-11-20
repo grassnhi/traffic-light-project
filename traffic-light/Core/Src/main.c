@@ -104,7 +104,7 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim2);
     HAL_TIM_Base_Start_IT(&htim3);
   /* USER CODE END 2 */
-    setTimer(0, 1000);	// Timer RED1_GREEN2
+    setTimer(0, 5000);	// Timer RED1_GREEN2
 //    		setTimer(2, 1000);			// Timer UART
 //    		clearTimer(3);				// Timer blinking LED
   /* Infinite loop */
@@ -113,17 +113,17 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-//	  fsm_automatic_run();
+	  fsm_automatic_run();
 //	  traffic_light(GREEN2);
 //	  HAL_GPIO_WritePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin, SET);
 //	  HAL_GPIO_WritePin(TLIGHT12_GPIO_Port, TLIGHT12_Pin, RESET);
 //	  HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, RESET);
 //	  HAL_GPIO_WritePin(TLIGHT22_GPIO_Port, TLIGHT22_Pin, SET);
 
-	  if(timer_flag[0] == 1){
-		  HAL_GPIO_TogglePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin);
-		  setTimer(0, 1000);
-	  }
+//	  if(timer_flag[0] == 1){
+//		  HAL_GPIO_TogglePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin);
+//		  setTimer(0, 1000);
+//	  }
 
 //	  switch(current_state){
 //
@@ -272,7 +272,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 63;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 9;
+  htim2.Init.Period = 999;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
