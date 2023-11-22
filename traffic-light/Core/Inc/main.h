@@ -22,6 +22,7 @@
 #include "global.h"
 #include "displayLED.h"
 #include "input_reading.h"
+#include "fsm_automatic.h"
 #include "software_timer.h"
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __MAIN_H
@@ -85,7 +86,7 @@ void Error_Handler(void);
 #define TLIGHT21_Pin GPIO_PIN_5
 #define TLIGHT21_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
-
+extern UART_HandleTypeDef huart2;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

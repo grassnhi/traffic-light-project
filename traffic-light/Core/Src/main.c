@@ -100,15 +100,117 @@ int main(void)
   MX_TIM3_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  current_state = GREEN2;
+  HAL_TIM_Base_Start_IT(&htim2);
+    HAL_TIM_Base_Start_IT(&htim3);
   /* USER CODE END 2 */
-
+    setTimer(0, 5000);	// Timer RED1_GREEN2
+//    		setTimer(2, 1000);			// Timer UART
+//    		clearTimer(3);				// Timer blinking LED
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   while (1)
   {
     /* USER CODE END WHILE */
+	  fsm_automatic_run();
+//	  traffic_light(GREEN2);
+//	  HAL_GPIO_WritePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin, SET);
+//	  HAL_GPIO_WritePin(TLIGHT12_GPIO_Port, TLIGHT12_Pin, RESET);
+//	  HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, RESET);
+//	  HAL_GPIO_WritePin(TLIGHT22_GPIO_Port, TLIGHT22_Pin, SET);
 
+//	  if(timer_flag[0] == 1){
+//		  HAL_GPIO_TogglePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin);
+//		  setTimer(0, 1000);
+//	  }
+
+//	  switch(current_state){
+//
+//	case GREEN2:
+//		traffic_light(GREEN2);
+//
+//		if (timer_flag[0] == 1) {
+//			counter2 = RED - GREEN;
+//			current_state = AMBER2;
+//			setTimer(0, counter2 * 1000);
+//		}
+//		if (timer_flag[2] == 1) {
+//			displayUART1(counter1, huart2);
+//			displayUART2(counter2, huart2);
+//		}
+//		if(isButtonPressed(0)){
+//			current_state = GREEN2;
+//		}
+//		if(isButtonPressed(3)){
+//			current_state = PED_RED;
+//		}
+//		break;
+//
+//	case AMBER2:
+//		traffic_light(AMBER2);
+//
+//		if (timer_flag[0] == 1) {
+//			counter1 = GREEN;
+//			counter2 = RED;
+//			setTimer(0, counter1 * 1000);
+//		}
+//		if (timer_flag[2] == 1) {
+//			displayUART1(counter1, huart2);
+//			displayUART2(counter2, huart2);
+//		}
+//		if(isButtonPressed(0)){
+//			current_state = AMBER2;
+//		}
+//		if(isButtonPressed(3)){
+//			current_state = PED_RED;
+//		}
+//		break;
+//
+//	case GREEN1:
+//		traffic_light(GREEN1);
+//
+//		if (timer_flag[0] == 1) {
+//			status = AMBER1;
+//			counter1 = RED - GREEN;
+//			setTimer(0, counter1 * 1000);
+//		}
+//		if (timer_flag[2] == 1) {
+//			displayUART1(counter1, huart2);
+//			displayUART2(counter2, huart2);
+//		}
+//		if(isButtonPressed(0)){
+//			current_state = GREEN1;
+//		}
+//		if(isButtonPressed(3)){
+//			current_state = PED_GREEN;
+//		}
+//		break;
+//
+//	case AMBER1:
+//		traffic_light(AMBER1);
+//
+//		if (timer_flag[0] == 1) {
+//			status = GREEN2;
+//			counter1 = RED;
+//			counter2 = GREEN;
+//			setTimer(0, counter2 * 1000);
+//		}
+//		if (timer_flag[2] == 1) {
+//			displayUART1(counter1, huart2);
+//			displayUART2(counter2, huart2);
+//		}
+//		if(isButtonPressed(0)){
+//			current_state = AMBER1;
+//		}
+//		if(isButtonPressed(3)){
+//			current_state = PED_GREEN;
+//		}
+//		break;
+//
+//	default:
+//		break;
+//	}
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -170,7 +272,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 63;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 9;
+  htim2.Init.Period = 999;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -320,7 +422,15 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
+{
+	if(htim->Instance == TIM2){
+		getKeyInput();
+		timerRun();
+	}else if(htim->Instance == TIM3){
 
+	}
+}
 /* USER CODE END 4 */
 
 /**
