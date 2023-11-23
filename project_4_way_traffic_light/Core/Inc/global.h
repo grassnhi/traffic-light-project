@@ -50,6 +50,8 @@ extern int GREEN;
 extern int red_counter;
 extern int green_counter;
 
+extern int counter1;
+
 extern char str[50];
 extern uint8_t temp;
 
