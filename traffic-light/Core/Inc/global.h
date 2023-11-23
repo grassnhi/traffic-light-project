@@ -49,6 +49,7 @@ extern int GREEN;
 
 extern int counter1;
 extern int counter2;
+extern int counter;
 
 extern char str[50];
 extern uint8_t temp;

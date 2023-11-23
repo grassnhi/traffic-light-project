@@ -19,8 +19,8 @@ void fsm_automatic_run() {
 			setTimer(0, counter2 * 1000);
 		}
 		if (timer_flag[2] == 1) {
-			displayUART1(counter1, huart2);
-			displayUART2(counter2, huart2);
+			displayUART(counter1, huart2);
+			displayUART(counter2, huart2);
 		}
 		if(isButtonPressed(0)){
 			current_state = GREEN2;
@@ -40,8 +40,8 @@ void fsm_automatic_run() {
 			setTimer(0, counter1 * 1000);
 		}
 		if (timer_flag[2] == 1) {
-			displayUART1(counter1, huart2);
-			displayUART2(counter2, huart2);
+			displayUART(counter1, huart2);
+			displayUART(counter2, huart2);
 		}
 		if(isButtonPressed(0)){
 			current_state = AMBER2;
@@ -61,8 +61,8 @@ void fsm_automatic_run() {
 			setTimer(0, counter1 * 1000);
 		}
 		if (timer_flag[2] == 1) {
-			displayUART1(counter1, huart2);
-			displayUART2(counter2, huart2);
+			displayUART(counter1, huart2);
+			displayUART(counter2, huart2);
 		}
 		if(isButtonPressed(0)){
 			current_state = GREEN1;
@@ -83,8 +83,8 @@ void fsm_automatic_run() {
 			setTimer(0, counter2 * 1000);
 		}
 		if (timer_flag[2] == 1) {
-			displayUART1(counter1, huart2);
-			displayUART2(counter2, huart2);
+			displayUART(counter1, huart2);
+			displayUART(counter2, huart2);
 		}
 		if(isButtonPressed(0)){
 			current_state = AMBER1;
