@@ -21,6 +21,8 @@ extern int timer_flag[NUM_OF_TIMERS];
 
 void setTimer(int index, int duration);
 void clearTimer(int index);
+void clearAllTimer();
+
 void timerRun();
 
 

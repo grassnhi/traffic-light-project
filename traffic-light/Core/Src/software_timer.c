@@ -22,6 +22,12 @@ void clearTimer(int index) {
 	timer_flag[index] = 0;
 }
 
+void clearAllTimer() {
+	for (int i = 0; i < NUM_OF_TIMERS; i++) {
+		clearTimer(i);
+	}
+}
+
 void timerRun(){
 	for (int i = 0; i < NUM_OF_TIMERS; i++) {
 		if (timer_counter[i] > 0){

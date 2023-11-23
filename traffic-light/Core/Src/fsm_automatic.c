@@ -7,6 +7,12 @@
 
 #include "main.h"
 
+void fsm_automatic_init(){
+	current_state = RED1_GREEN2;
+	counter1 = RED;
+	counter2 = GREEN;
+}
+
 void fsm_automatic_run() {
 	switch(current_state){
 

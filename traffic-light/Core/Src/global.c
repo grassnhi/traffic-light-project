@@ -10,6 +10,7 @@
 int status = INIT;
 int ped_status = INIT;
 int current_state;
+int turn_state = INIT;
 
 int RED = 5;
 int AMBER = 2;

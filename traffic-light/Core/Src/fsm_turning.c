@@ -7,8 +7,10 @@
 
 #include "main.h"
 
-void fsm_turning_run() {
-	switch(current_state){
+
+
+void fsm_turning_run(turn_state) {
+	switch(turn_state){
 
 	case AUTO_AMBER:
 		
@@ -18,13 +20,10 @@ void fsm_turning_run() {
             set_blinky(AUTO_AMBER);
 		}
 		if(isButtonPressed(1)){
-			current_state = ADJ_AMBER;
+			turn_state = ADJ_AMBER;
             AMBER++;
             RED++;
             displayUART(AMBER, huart2);
-		}
-		if(isButtonPressed(0)){
-			current_state = AUTO_GREEN;
 		}
 		break;
 
@@ -34,7 +33,7 @@ void fsm_turning_run() {
             set_blinky(AUTO_AMBER);
 		}
 		if(isButtonPressed(1)){
-			current_state = ADJ_AMBER;
+			turn_state = ADJ_AMBER;
             AMBER++;
             RED++;
             if(AMBER == 100){
@@ -44,7 +43,7 @@ void fsm_turning_run() {
             displayUART(AMBER, huart2);
 		}
 		if(isButtonPressed(2)){
-			current_state = AUTO_AMBER;
+			turn_state = AUTO_AMBER;
 		}
         break;
 
@@ -54,13 +53,10 @@ void fsm_turning_run() {
             set_blinky(AUTO_GREEN);
 		}
 		if(isButtonPressed(1)){
-			current_state = ADJ_GREEN;
+			turn_state = ADJ_GREEN;
             GREEN++;
             RED++;
             displayUART(GREEN, huart2);
-		}
-		if(isButtonPressed(0)){
-			current_state = INIT;
 		}
 		break;
 
@@ -70,7 +66,7 @@ void fsm_turning_run() {
             set_blinky(AUTO_AMBER);
 		}
 		if(isButtonPressed(1)){
-			current_state = ADJ_AMBER;
+			turn_state = ADJ_AMBER;
             AMBER++;
             RED++;
             if(AMBER == 100){
@@ -80,7 +76,7 @@ void fsm_turning_run() {
             displayUART(AMBER, huart2);
 		}
 		if(isButtonPressed(2)){
-			current_state = AUTO_GREEN;
+			turn_state = AUTO_GREEN;
 		}
         break;
 

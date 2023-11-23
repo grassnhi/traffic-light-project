@@ -42,6 +42,7 @@
 extern int status;
 extern int ped_status;
 extern int current_state;
+extern int turn_state;
 
 extern int RED;
 extern int AMBER;
