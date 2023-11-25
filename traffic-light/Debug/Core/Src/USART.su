@@ -1,2 +1,1 @@
-usart.c:12:6:displayUART1	24	static
-usart.c:18:6:displayUART2	24	static
+USART.c:12:6:displayUART	24	static

@@ -5,8 +5,10 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Core/Src/USART.c \
 ../Core/Src/displayLED.c \
 ../Core/Src/fsm_automatic.c \
+../Core/Src/fsm_turning.c \
 ../Core/Src/global.c \
 ../Core/Src/input_reading.c \
 ../Core/Src/main.c \
@@ -15,12 +17,13 @@ C_SRCS += \
 ../Core/Src/stm32f1xx_it.c \
 ../Core/Src/syscalls.c \
 ../Core/Src/sysmem.c \
-../Core/Src/system_stm32f1xx.c \
-../Core/Src/usart.c 
+../Core/Src/system_stm32f1xx.c 
 
 OBJS += \
+./Core/Src/USART.o \
 ./Core/Src/displayLED.o \
 ./Core/Src/fsm_automatic.o \
+./Core/Src/fsm_turning.o \
 ./Core/Src/global.o \
 ./Core/Src/input_reading.o \
 ./Core/Src/main.o \
@@ -29,12 +32,13 @@ OBJS += \
 ./Core/Src/stm32f1xx_it.o \
 ./Core/Src/syscalls.o \
 ./Core/Src/sysmem.o \
-./Core/Src/system_stm32f1xx.o \
-./Core/Src/usart.o 
+./Core/Src/system_stm32f1xx.o 
 
 C_DEPS += \
+./Core/Src/USART.d \
 ./Core/Src/displayLED.d \
 ./Core/Src/fsm_automatic.d \
+./Core/Src/fsm_turning.d \
 ./Core/Src/global.d \
 ./Core/Src/input_reading.d \
 ./Core/Src/main.d \
@@ -43,8 +47,7 @@ C_DEPS += \
 ./Core/Src/stm32f1xx_it.d \
 ./Core/Src/syscalls.d \
 ./Core/Src/sysmem.d \
-./Core/Src/system_stm32f1xx.d \
-./Core/Src/usart.d 
+./Core/Src/system_stm32f1xx.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

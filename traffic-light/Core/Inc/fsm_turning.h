@@ -10,6 +10,6 @@
 
 #include "main.h"
 
-void fsm_turning_run();
+void fsm_turning_run(int turn_state);
 
 #endif /* INC_FSM_AUTOMATIC_H_ */

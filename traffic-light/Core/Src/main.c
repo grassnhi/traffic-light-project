@@ -109,11 +109,13 @@ int main(void)
 //    		clearTimer(3);				// Timer blinking LED
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
+setTimer(2, 1000);
   while (1)
   {
     /* USER CODE END WHILE */
 	  fsm_automatic_run();
+	  fsm_turning_run(current_state);
+//	  displayUART(10, huart2);
 //	  traffic_light(GREEN2);
 //	  HAL_GPIO_WritePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin, SET);
 //	  HAL_GPIO_WritePin(TLIGHT12_GPIO_Port, TLIGHT12_Pin, RESET);
@@ -272,7 +274,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 63;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 999;
+  htim2.Init.Period = 9999;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)

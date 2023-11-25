@@ -2,7 +2,7 @@ Core/Src/stm32f1xx_hal_msp.o: ../Core/Src/stm32f1xx_hal_msp.c \
  ../Core/Inc/main.h ../Core/Inc/usart.h ../Core/Inc/main.h \
  ../Core/Inc/global.h ../Core/Inc/displayLED.h \
  ../Core/Inc/input_reading.h ../Core/Inc/fsm_automatic.h \
- ../Core/Inc/software_timer.h \
+ ../Core/Inc/fsm_turning.h ../Core/Inc/software_timer.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -42,6 +42,8 @@ Core/Src/stm32f1xx_hal_msp.o: ../Core/Src/stm32f1xx_hal_msp.c \
 ../Core/Inc/input_reading.h:
 
 ../Core/Inc/fsm_automatic.h:
+
+../Core/Inc/fsm_turning.h:
 
 ../Core/Inc/software_timer.h:
 

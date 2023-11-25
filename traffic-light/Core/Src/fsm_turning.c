@@ -9,7 +9,7 @@
 
 
 
-void fsm_turning_run(turn_state) {
+void fsm_turning_run(int turn_state) {
 	switch(turn_state){
 
 	case AUTO_AMBER:

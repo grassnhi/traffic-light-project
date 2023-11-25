@@ -27,6 +27,7 @@ void fsm_automatic_run() {
 		if (timer_flag[2] == 1) {
 			displayUART(counter1, huart2);
 			displayUART(counter2, huart2);
+			setTimer(2, 1000);
 		}
 		if(isButtonPressed(0)){
 			current_state = GREEN2;
@@ -48,6 +49,7 @@ void fsm_automatic_run() {
 		if (timer_flag[2] == 1) {
 			displayUART(counter1, huart2);
 			displayUART(counter2, huart2);
+			setTimer(2, 1000);
 		}
 		if(isButtonPressed(0)){
 			current_state = AMBER2;
@@ -69,6 +71,7 @@ void fsm_automatic_run() {
 		if (timer_flag[2] == 1) {
 			displayUART(counter1, huart2);
 			displayUART(counter2, huart2);
+			setTimer(2, 1000);
 		}
 		if(isButtonPressed(0)){
 			current_state = GREEN1;
@@ -91,6 +94,7 @@ void fsm_automatic_run() {
 		if (timer_flag[2] == 1) {
 			displayUART(counter1, huart2);
 			displayUART(counter2, huart2);
+			setTimer(2, 1000);
 		}
 		if(isButtonPressed(0)){
 			current_state = AMBER1;

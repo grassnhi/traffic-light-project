@@ -1,4 +1,4 @@
-Core/Src/fsm_automatic.o: ../Core/Src/fsm_automatic.c ../Core/Inc/main.h \
+Core/Src/fsm_turning.o: ../Core/Src/fsm_turning.c ../Core/Inc/main.h \
  ../Core/Inc/usart.h ../Core/Inc/main.h ../Core/Inc/global.h \
  ../Core/Inc/displayLED.h ../Core/Inc/input_reading.h \
  ../Core/Inc/fsm_automatic.h ../Core/Inc/fsm_turning.h \

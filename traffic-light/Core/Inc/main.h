@@ -23,6 +23,7 @@
 #include "displayLED.h"
 #include "input_reading.h"
 #include "fsm_automatic.h"
+#include "fsm_turning.h"
 #include "software_timer.h"
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __MAIN_H
