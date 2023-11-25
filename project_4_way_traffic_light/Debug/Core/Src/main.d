@@ -27,7 +27,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/usart.h \
  ../Core/Inc/main.h ../Core/Inc/global.h ../Core/Inc/displayLED.h \
  ../Core/Inc/global.h ../Core/Inc/input_reading.h \
  ../Core/Inc/software_timer.h ../Core/Inc/software_timer.h \
- ../Core/Inc/input_processing.h
+ ../Core/Inc/input_processing.h ../Core/Inc/fsm_pedestrian.h \
+ ../Core/Inc/buzzer_processing.h ../Core/Inc/displayLED.h \
+ ../Core/Inc/input_reading.h
 
 ../Core/Inc/usart.h:
 
@@ -98,3 +100,11 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/usart.h \
 ../Core/Inc/software_timer.h:
 
 ../Core/Inc/input_processing.h:
+
+../Core/Inc/fsm_pedestrian.h:
+
+../Core/Inc/buzzer_processing.h:
+
+../Core/Inc/displayLED.h:
+
+../Core/Inc/input_reading.h:

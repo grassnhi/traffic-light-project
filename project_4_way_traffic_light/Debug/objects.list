@@ -1,6 +1,7 @@
 "./Core/Src/USART.o"
 "./Core/Src/buzzer_processing.o"
 "./Core/Src/displayLED.o"
+"./Core/Src/fsm_automatic.o"
 "./Core/Src/fsm_pedestrian.o"
 "./Core/Src/global.o"
 "./Core/Src/input_processing.o"
