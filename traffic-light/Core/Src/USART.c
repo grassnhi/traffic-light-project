@@ -12,5 +12,6 @@
 void displayUART(int counter, UART_HandleTypeDef huart2) {
 	int t = counter / 10;
 	int u = counter % 10;
-	HAL_UART_Transmit(&huart2, (void*)str, sprintf(str, "!7SEG1=%u%u#\r\n", t, u), 1000);
+	sprintf(str, "!7SEG1=%d#\r\n", counter);
+	HAL_UART_Transmit(&huart2, (void*)str, sizeof(str), 1000);
 }

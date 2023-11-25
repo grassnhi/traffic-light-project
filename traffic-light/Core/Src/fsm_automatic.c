@@ -5,10 +5,10 @@
  *      Author: PC
  */
 
-#include "main.h"
+#include "fsm_automatic.h"
 
 void fsm_automatic_init(){
-	current_state = RED1_GREEN2;
+	current_state = GREEN2;
 	counter1 = RED;
 	counter2 = GREEN;
 }
@@ -29,12 +29,7 @@ void fsm_automatic_run() {
 			displayUART(counter2, huart2);
 			setTimer(2, 1000);
 		}
-		if(isButtonPressed(0)){
-			current_state = GREEN2;
-		}
-		if(isButtonPressed(3)){
-			current_state = PED_RED;
-		}
+
 		break;
 
 	case AMBER2:
@@ -51,12 +46,7 @@ void fsm_automatic_run() {
 			displayUART(counter2, huart2);
 			setTimer(2, 1000);
 		}
-		if(isButtonPressed(0)){
-			current_state = AMBER2;
-		}
-		if(isButtonPressed(3)){
-			current_state = PED_RED;
-		}
+
 		break;
 
 	case GREEN1:
@@ -73,12 +63,7 @@ void fsm_automatic_run() {
 			displayUART(counter2, huart2);
 			setTimer(2, 1000);
 		}
-		if(isButtonPressed(0)){
-			current_state = GREEN1;
-		}
-		if(isButtonPressed(3)){
-			current_state = PED_GREEN;
-		}
+
 		break;
 
 	case AMBER1:
@@ -96,12 +81,7 @@ void fsm_automatic_run() {
 			displayUART(counter2, huart2);
 			setTimer(2, 1000);
 		}
-		if(isButtonPressed(0)){
-			current_state = AMBER1;
-		}
-		if(isButtonPressed(3)){
-			current_state = PED_GREEN;
-		}
+
 		break;
 
 	default:

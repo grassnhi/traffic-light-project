@@ -6,8 +6,10 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Core/Src/USART.c \
+../Core/Src/buzzer_processing.c \
 ../Core/Src/displayLED.c \
 ../Core/Src/fsm_automatic.c \
+../Core/Src/fsm_pedestrian.c \
 ../Core/Src/fsm_turning.c \
 ../Core/Src/global.c \
 ../Core/Src/input_reading.c \
@@ -21,8 +23,10 @@ C_SRCS += \
 
 OBJS += \
 ./Core/Src/USART.o \
+./Core/Src/buzzer_processing.o \
 ./Core/Src/displayLED.o \
 ./Core/Src/fsm_automatic.o \
+./Core/Src/fsm_pedestrian.o \
 ./Core/Src/fsm_turning.o \
 ./Core/Src/global.o \
 ./Core/Src/input_reading.o \
@@ -36,8 +40,10 @@ OBJS += \
 
 C_DEPS += \
 ./Core/Src/USART.d \
+./Core/Src/buzzer_processing.d \
 ./Core/Src/displayLED.d \
 ./Core/Src/fsm_automatic.d \
+./Core/Src/fsm_pedestrian.d \
 ./Core/Src/fsm_turning.d \
 ./Core/Src/global.d \
 ./Core/Src/input_reading.d \

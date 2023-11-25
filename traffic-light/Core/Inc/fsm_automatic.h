@@ -1,7 +1,7 @@
 /*
- * fsm_mode.h
+ * fsm_automatic.h
  *
- *  Created on: Oct 22, 2023
+ *  Created on: Nov 25, 2023
  *      Author: PC
  */
 
@@ -11,6 +11,7 @@
 #include "main.h"
 
 void fsm_automatic_init();
+
 void fsm_automatic_run();
 
 #endif /* INC_FSM_AUTOMATIC_H_ */

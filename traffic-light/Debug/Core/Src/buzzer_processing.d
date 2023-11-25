@@ -1,4 +1,5 @@
-Core/Src/global.o: ../Core/Src/global.c ../Core/Inc/main.h \
+Core/Src/buzzer_processing.o: ../Core/Src/buzzer_processing.c \
+ ../Core/Inc/buzzer_processing.h ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -24,11 +25,13 @@ Core/Src/global.o: ../Core/Src/global.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- ../Core/Inc/usart.h ../Core/Inc/main.h ../Core/Inc/global.h \
- ../Core/Inc/displayLED.h ../Core/Inc/fsm_turning.h \
- ../Core/Inc/input_reading.h ../Core/Inc/fsm_automatic.h \
- ../Core/Inc/fsm_pedestrian.h ../Core/Inc/software_timer.h \
- ../Core/Inc/buzzer_processing.h
+ ../Core/Inc/usart.h ../Core/Inc/global.h ../Core/Inc/displayLED.h \
+ ../Core/Inc/fsm_turning.h ../Core/Inc/input_reading.h \
+ ../Core/Inc/fsm_automatic.h ../Core/Inc/fsm_pedestrian.h \
+ ../Core/Inc/software_timer.h ../Core/Inc/buzzer_processing.h \
+ ../Core/Inc/note.h
+
+../Core/Inc/buzzer_processing.h:
 
 ../Core/Inc/main.h:
 
@@ -84,8 +87,6 @@ Core/Src/global.o: ../Core/Src/global.c ../Core/Inc/main.h \
 
 ../Core/Inc/usart.h:
 
-../Core/Inc/main.h:
-
 ../Core/Inc/global.h:
 
 ../Core/Inc/displayLED.h:
@@ -101,3 +102,5 @@ Core/Src/global.o: ../Core/Src/global.c ../Core/Inc/main.h \
 ../Core/Inc/software_timer.h:
 
 ../Core/Inc/buzzer_processing.h:
+
+../Core/Inc/note.h:

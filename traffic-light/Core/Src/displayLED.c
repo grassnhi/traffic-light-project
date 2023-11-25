@@ -7,9 +7,7 @@
 
 #include "main.h"
 
-void toggle_red() {
-	
-}
+
 void traffic_light(int color) {
 	switch (color) {
 		case INIT:

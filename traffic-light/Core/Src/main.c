@@ -102,117 +102,23 @@ int main(void)
   /* USER CODE BEGIN 2 */
   current_state = GREEN2;
   HAL_TIM_Base_Start_IT(&htim2);
-    HAL_TIM_Base_Start_IT(&htim3);
+  //HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
   /* USER CODE END 2 */
-    setTimer(0, 5000);	// Timer RED1_GREEN2
-//    		setTimer(2, 1000);			// Timer UART
-//    		clearTimer(3);				// Timer blinking LED
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-setTimer(2, 1000);
+    setTimer(0, 5000);
+    //setTimer(2, 1000);
+    fsm_automatic_init();
+    ped_status = PED_OFF;
+    turn_state = AUTO_AMBER;
   while (1)
   {
     /* USER CODE END WHILE */
+
 	  fsm_automatic_run();
-	  fsm_turning_run(current_state);
-//	  displayUART(10, huart2);
-//	  traffic_light(GREEN2);
-//	  HAL_GPIO_WritePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin, SET);
-//	  HAL_GPIO_WritePin(TLIGHT12_GPIO_Port, TLIGHT12_Pin, RESET);
-//	  HAL_GPIO_WritePin(TLIGHT21_GPIO_Port, TLIGHT21_Pin, RESET);
-//	  HAL_GPIO_WritePin(TLIGHT22_GPIO_Port, TLIGHT22_Pin, SET);
-
-//	  if(timer_flag[0] == 1){
-//		  HAL_GPIO_TogglePin(TLIGHT11_GPIO_Port, TLIGHT11_Pin);
-//		  setTimer(0, 1000);
-//	  }
-
-//	  switch(current_state){
-//
-//	case GREEN2:
-//		traffic_light(GREEN2);
-//
-//		if (timer_flag[0] == 1) {
-//			counter2 = RED - GREEN;
-//			current_state = AMBER2;
-//			setTimer(0, counter2 * 1000);
-//		}
-//		if (timer_flag[2] == 1) {
-//			displayUART1(counter1, huart2);
-//			displayUART2(counter2, huart2);
-//		}
-//		if(isButtonPressed(0)){
-//			current_state = GREEN2;
-//		}
-//		if(isButtonPressed(3)){
-//			current_state = PED_RED;
-//		}
-//		break;
-//
-//	case AMBER2:
-//		traffic_light(AMBER2);
-//
-//		if (timer_flag[0] == 1) {
-//			counter1 = GREEN;
-//			counter2 = RED;
-//			setTimer(0, counter1 * 1000);
-//		}
-//		if (timer_flag[2] == 1) {
-//			displayUART1(counter1, huart2);
-//			displayUART2(counter2, huart2);
-//		}
-//		if(isButtonPressed(0)){
-//			current_state = AMBER2;
-//		}
-//		if(isButtonPressed(3)){
-//			current_state = PED_RED;
-//		}
-//		break;
-//
-//	case GREEN1:
-//		traffic_light(GREEN1);
-//
-//		if (timer_flag[0] == 1) {
-//			status = AMBER1;
-//			counter1 = RED - GREEN;
-//			setTimer(0, counter1 * 1000);
-//		}
-//		if (timer_flag[2] == 1) {
-//			displayUART1(counter1, huart2);
-//			displayUART2(counter2, huart2);
-//		}
-//		if(isButtonPressed(0)){
-//			current_state = GREEN1;
-//		}
-//		if(isButtonPressed(3)){
-//			current_state = PED_GREEN;
-//		}
-//		break;
-//
-//	case AMBER1:
-//		traffic_light(AMBER1);
-//
-//		if (timer_flag[0] == 1) {
-//			status = GREEN2;
-//			counter1 = RED;
-//			counter2 = GREEN;
-//			setTimer(0, counter2 * 1000);
-//		}
-//		if (timer_flag[2] == 1) {
-//			displayUART1(counter1, huart2);
-//			displayUART2(counter2, huart2);
-//		}
-//		if(isButtonPressed(0)){
-//			current_state = AMBER1;
-//		}
-//		if(isButtonPressed(3)){
-//			current_state = PED_GREEN;
-//		}
-//		break;
-//
-//	default:
-//		break;
-//	}
+	  fsm_turning_run(turn_state);
+	  fsm_pedestrian_run();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -274,7 +180,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 63;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 9999;
+  htim2.Init.Period = 999;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -312,6 +218,7 @@ static void MX_TIM3_Init(void)
 
   TIM_ClockConfigTypeDef sClockSourceConfig = {0};
   TIM_MasterConfigTypeDef sMasterConfig = {0};
+  TIM_OC_InitTypeDef sConfigOC = {0};
 
   /* USER CODE BEGIN TIM3_Init 1 */
 
@@ -331,15 +238,28 @@ static void MX_TIM3_Init(void)
   {
     Error_Handler();
   }
+  if (HAL_TIM_PWM_Init(&htim3) != HAL_OK)
+  {
+    Error_Handler();
+  }
   sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
   if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
   {
     Error_Handler();
   }
+  sConfigOC.OCMode = TIM_OCMODE_PWM1;
+  sConfigOC.Pulse = 0;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
   /* USER CODE BEGIN TIM3_Init 2 */
 
   /* USER CODE END TIM3_Init 2 */
+  HAL_TIM_MspPostInit(&htim3);
 
 }
 
@@ -390,22 +310,15 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, BUZZ_Pin|PLIGHT2_Pin|TLIGHT11_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, PLIGHT1_Pin|TLIGHT12_Pin|TLIGHT22_Pin|TLIGHT21_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, PLIGHT1_Pin|TLIGHT12_Pin|TLIGHT22_Pin|TLIGHT21_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, PLIGHT2_Pin|TLIGHT11_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : BT3_Pin BT0_Pin BT1_Pin */
   GPIO_InitStruct.Pin = BT3_Pin|BT0_Pin|BT1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : BUZZ_Pin PLIGHT2_Pin TLIGHT11_Pin */
-  GPIO_InitStruct.Pin = BUZZ_Pin|PLIGHT2_Pin|TLIGHT11_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pin : BT2_Pin */
@@ -420,6 +333,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PLIGHT2_Pin TLIGHT11_Pin */
+  GPIO_InitStruct.Pin = PLIGHT2_Pin|TLIGHT11_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 }
 
