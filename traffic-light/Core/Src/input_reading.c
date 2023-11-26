@@ -23,10 +23,10 @@ static int button_flag[NO_OF_BUTTONS];
 
 void buttonInit(){
 	for(int i = 0; i < NO_OF_BUTTONS; i++){
-		KeyReg0[i] = NORMAL_STATE;
-		KeyReg1[i] = NORMAL_STATE;
-		KeyReg2[i] = NORMAL_STATE;
-		KeyReg3[i] = NORMAL_STATE;
+		KeyReg0[i] = BUTTON_IS_RELEASED;
+		KeyReg1[i] = BUTTON_IS_RELEASED;
+		KeyReg2[i] = BUTTON_IS_RELEASED;
+		KeyReg3[i] = BUTTON_IS_RELEASED;
 
 		TimeOutForKeyPress[i] =  500;
 		button_flag[i] = 0;
@@ -59,10 +59,18 @@ void getKeyInput(){
 		if (KeyReg2[i] != KeyReg3[i]){
 		  KeyReg3[i] = KeyReg2[i];
 
-		  if (KeyReg3[i] == PRESSED_STATE){
+		  if (KeyReg3[i] == BUTTON_IS_PRESSED){
 			TimeOutForKeyPress[i] = DURATION_FOR_AUTO_INCREASING;
 			subKeyProcess(i);
 		  }
+		}else{
+			if(KeyReg3[i] == BUTTON_IS_PRESSED){
+				TimeOutForKeyPress[i]--;
+				if(TimeOutForKeyPress[i] == 0){
+					TimeOutForKeyPress[i] = DURATION_FOR_AUTO_INCREASING;
+					subKeyProcess(i);
+				}
+			}
 		}
 		}
 	}

@@ -68,8 +68,10 @@ const int duration = sizeof(sound)/sizeof(sound[0]);
 
 void buzzerRun() {
 	if (cnt < duration) {
-		__HAL_TIM_SET_AUTORELOAD(&htim3, 1000000/sound[cnt]);
-		__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 15);
+//		__HAL_TIM_SET_AUTORELOAD(&htim3, 1000000/sound[cnt]);
+//		__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 15);
+		__HAL_TIM_SET_AUTORELOAD(&htim3, 1000-100*counter1);
+		__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 100-25*counter1);
 		cnt++;
 	}
 	else

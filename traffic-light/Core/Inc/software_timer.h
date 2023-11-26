@@ -16,9 +16,7 @@
 
 extern int TIME_CYCLE;					
 
-extern int timer_counter[NUM_OF_TIMERS];
-extern int timer_flag[NUM_OF_TIMERS];
-
+int getTimerFlag(int index);
 void setTimer(int index, int duration);
 void clearTimer(int index);
 void clearAllTimer();

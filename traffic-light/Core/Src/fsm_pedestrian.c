@@ -7,35 +7,34 @@
 
 #include "fsm_pedestrian.h"
 
-int timePedestrianLight;
+
+static int duration = 0;
 
 void fsm_pedestrian_run() {
 	switch(ped_status) {
 	case PED_OFF:
 		buzzerStop();
-		//pedestrian_light(PED_OFF);
+		pedestrian_light(PED_OFF);
+		duration = RED + GREEN;
 		if (isButtonPressed(3)==1) {
-			HAL_GPIO_TogglePin(PLIGHT2_GPIO_Port, PLIGHT2_Pin);
-			//HAL_GPIO_WritePin(PLIGHT2_GPIO_Port, PLIGHT2_Pin, SET);
-			setTimer(1, 5000);
+			setTimer(1, duration*1000);
 			if (current_state == GREEN2 || current_state == AMBER2)
 				ped_status = PED_RED;
 
 			else
 				ped_status = PED_GREEN;
-			timePedestrianLight = PEDESTRIAN_DURATION;
 		}
 		break;
 	case PED_RED:
 		buzzerStop();
-		//pedestrian_light(PED_RED);
-
+		pedestrian_light(PED_RED);
 		if (current_state == GREEN1 || current_state == AMBER1)
 			ped_status = PED_GREEN;
-		if (timer_flag[1] == 1){
+		if (getFlagTimer(1) == 1){
 			ped_status = PED_OFF;
-			//HAL_GPIO_WritePin(PLIGHT1_GPIO_Port, PLIGHT1_Pin, RESET);
-			//HAL_GPIO_WritePin(PLIGHT2_GPIO_Port, PLIGHT2_Pin, RESET);
+		}
+		if(isButtonPressed(3)==1){
+			setTimer(1, duration);
 		}
 		break;
 	case PED_GREEN:
@@ -44,10 +43,11 @@ void fsm_pedestrian_run() {
 			buzzerRun();
 		if (current_state == GREEN2 || current_state == AMBER2)
 			ped_status = PED_RED;
-		if (timer_flag[1] == 1){
+		if (getFlagTimer(1) == 1){
 			ped_status = PED_OFF;
-			HAL_GPIO_WritePin(PLIGHT1_GPIO_Port, PLIGHT1_Pin, RESET);
-			HAL_GPIO_WritePin(PLIGHT2_GPIO_Port, PLIGHT2_Pin, RESET);
+		}
+		if(isButtonPressed(3)==1){
+			setTimer(1, duration);
 		}
 		break;
 	}

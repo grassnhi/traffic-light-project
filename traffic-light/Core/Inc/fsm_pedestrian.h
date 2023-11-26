@@ -10,8 +10,6 @@
 
 #include "main.h"
 
-#define PEDESTRIAN_DURATION 5
-
 void fsm_pedestrian_run();
 
 #endif /* INC_FSM_PEDESTRIAN_H_ */

@@ -12,6 +12,6 @@
 
 //UART_HandleTypeDef huart2;
 
-void displayUART(int counter, UART_HandleTypeDef huart2);
+void displayUART(int counter1, int counter2, UART_HandleTypeDef huart2);
 
 #endif /* INC_USART_H_ */
