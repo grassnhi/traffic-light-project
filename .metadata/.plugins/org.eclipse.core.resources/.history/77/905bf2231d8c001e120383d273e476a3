@@ -25,7 +25,6 @@ int getFlagTimer(int index){
 
 
 void setTimer(int index, int duration) {
-	deleteTaskID(&timer_counter, index);
 	addTask(&timer_counter, index, duration/TIME_CYCLE);
 	timer_flag[index] = 0;
 }

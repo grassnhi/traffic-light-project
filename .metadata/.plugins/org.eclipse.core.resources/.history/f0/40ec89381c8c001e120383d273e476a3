@@ -66,9 +66,19 @@ void fsm_automatic_run() {
 	case AMBER1:
 		traffic_light(AMBER1);
 
-		if (counter1 <= 0 || counter2 <= 0) {
-			fsm_automatic_init(GREEN2);
+		if (timer_flag[0] == 1) {
+			status = GREEN2;
+			counter1 = RED;
+			counter2 = GREEN;
+			current_state = GREEN2;
+			setTimer(0, counter2 * 1000);
 		}
+		if (timer_flag[2] == 1) {
+			displayUART(counter1, huart2);
+			displayUART(counter2, huart2);
+			setTimer(2, 1000);
+		}
+
 		break;
 
 	default:

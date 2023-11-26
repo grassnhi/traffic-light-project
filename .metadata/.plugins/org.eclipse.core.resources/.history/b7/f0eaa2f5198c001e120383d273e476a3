@@ -25,29 +25,29 @@ int getFlagTimer(int index){
 
 
 void setTimer(int index, int duration) {
-	deleteTaskID(&timer_counter, index);
-	addTask(&timer_counter, index, duration/TIME_CYCLE);
+	timer_counter[index] = duration / TIME_CYCLE;
 	timer_flag[index] = 0;
 }
 
 void clearTimer(int index) {
-	deleteTaskID(&timer_counter, index);
+	timer_counter[index] = 0;
 	timer_flag[index] = 0;
 }
 
 void clearAllTimer() {
-	void clearList(struct Node** head);
-	for(int i = 0; i < NUM_OF_TIMERS; i++){
-		timer_flag[i] = 0;
+	for (int i = 0; i < NUM_OF_TIMERS; i++) {
+		clearTimer(i);
 	}
 }
 
 void timerRun(){
-	if(timer_counter == NULL) return;
-	if(timer_counter->data > 0){
-		timer_counter->data--;
-	}else{
-		timer_flag[timer_counter->taskID] = 1;
-		deleteTask(&timer_counter);
+	for (int i = 0; i < NUM_OF_TIMERS; i++) {
+		if (timer_counter[i] > 0){
+			timer_counter[i]--;
+			if (timer_counter[i] <= 0){
+				timer_flag[i] = 1;
+			}
+		}
 	}
 }
+

@@ -1,3 +1,4 @@
+"./Core/Src/LList.o"
 "./Core/Src/USART.o"
 "./Core/Src/buzzer_processing.o"
 "./Core/Src/displayLED.o"
