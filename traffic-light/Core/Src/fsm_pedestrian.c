@@ -15,7 +15,6 @@ void fsm_pedestrian_run() {
 		buzzerStop();
 		//pedestrian_light(PED_OFF);
 		if (isButtonPressed(3)==1) {
-			button_flag[3] = 0;
 			HAL_GPIO_TogglePin(PLIGHT2_GPIO_Port, PLIGHT2_Pin);
 			//HAL_GPIO_WritePin(PLIGHT2_GPIO_Port, PLIGHT2_Pin, SET);
 			setTimer(1, 5000);

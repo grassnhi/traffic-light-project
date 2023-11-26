@@ -1,4 +1,0 @@
-input_reading.c:25:6:buttonInit	16	static
-input_reading.c:37:5:isButtonPressed	16	static
-input_reading.c:48:6:subKeyProcess	16	static
-input_reading.c:52:6:getKeyInput	16	static

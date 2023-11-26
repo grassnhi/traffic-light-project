@@ -2,6 +2,8 @@
 "./Core/Src/buzzer_processing.o"
 "./Core/Src/displayLED.o"
 "./Core/Src/fsm_automatic.o"
+"./Core/Src/fsm_main.o"
+"./Core/Src/fsm_manual.o"
 "./Core/Src/fsm_pedestrian.o"
 "./Core/Src/fsm_turning.o"
 "./Core/Src/global.o"

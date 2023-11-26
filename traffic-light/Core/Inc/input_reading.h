@@ -13,7 +13,6 @@
 #define NORMAL_STATE SET
 #define PRESSED_STATE RESET
 #define NO_OF_BUTTONS 4
-int button_flag[NO_OF_BUTTONS];
 
 
 void getKeyInput();
