@@ -53,7 +53,6 @@ void fsm_automatic_run() {
 		traffic_light(GREEN1);
 
 		if (timer_flag[0] == 1) {
-			status = AMBER1;
 			counter1 = RED - GREEN;
 			current_state = AMBER1;
 			setTimer(0, counter1 * 1000);
@@ -70,7 +69,6 @@ void fsm_automatic_run() {
 		traffic_light(AMBER1);
 
 		if (timer_flag[0] == 1) {
-			status = GREEN2;
 			counter1 = RED;
 			counter2 = GREEN;
 			current_state = GREEN2;
