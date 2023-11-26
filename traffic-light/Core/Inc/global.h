@@ -11,28 +11,18 @@
 #include "main.h"
 
 #define INIT				0
+#define AUTO				1
+#define MANUAL				2
+#define TURNING				3
 
-#define MODE1				1
-#define RED1_GREEN2	        11
-#define RED1_AMBER2	        12
-#define GREEN1_RED2	        13
-#define	AMBER1_RED2	        14
-
-#define MODE2				2
-#define MAN_GREEN1			21
-#define MAN_AMBER1			22
-#define MAN_GREEN2			23
-#define	MAN_AMBER2			24
-
-#define MODE3				3
 #define AUTO_AMBER			31
 #define ADJ_AMBER			32
 #define AUTO_GREEN			33
 #define ADJ_GREEN			34
 
-#define PED_OFF             41
-#define PED_GREEN			42
-#define PED_RED				43
+#define PED_OFF             40
+#define PED_GREEN			41
+#define PED_RED				42
 
 #define GREEN1			    51
 #define AMBER1			    52
