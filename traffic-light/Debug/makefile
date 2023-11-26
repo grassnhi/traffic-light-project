@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+# Toolchain: GNU Tools for STM32 (9-2020-q2-update)
 ################################################################################
 
 -include ../makefile.init
@@ -12,6 +12,7 @@ RM := rm -rf
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
+-include subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -43,9 +44,6 @@ BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ART
 EXECUTABLES += \
 traffic-light.elf \
 
-MAP_FILES += \
-traffic-light.map \
-
 SIZE_OUTPUT += \
 default.size.stdout \
 
@@ -66,8 +64,8 @@ all: main-build
 main-build: traffic-light.elf secondary-outputs
 
 # Tool invocations
-traffic-light.elf traffic-light.map: $(OBJS) $(USER_OBJS) D:\231_semester\Microprocessor\assignment\nhi\traffic-light\STM32F103RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "traffic-light.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\231_semester\Microprocessor\assignment\nhi\traffic-light\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="traffic-light.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+traffic-light.elf: $(OBJS) $(USER_OBJS) E:\Coding\TRAFFIC_LIGHT_PROJECT\traffic-light\STM32F103RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "traffic-light.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\Coding\TRAFFIC_LIGHT_PROJECT\traffic-light\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="traffic-light.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -93,7 +91,11 @@ traffic-light.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 
 # Other Targets
 clean:
+<<<<<<< HEAD
 	-$(RM) default.size.stdout traffic-light.bin traffic-light.elf traffic-light.hex traffic-light.list traffic-light.map
+=======
+	-$(RM) $(OBJCOPY_HEX)$(SIZE_OUTPUT)$(OBJDUMP_LIST)$(EXECUTABLES)$(OBJS)$(S_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(OBJCOPY_BIN) traffic-light.elf
+>>>>>>> a1ec2fcf84ef407704282e9002dd09c1d5572e8d
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX) $(OBJCOPY_BIN)
@@ -105,6 +107,6 @@ fail-specified-linker-script-missing:
 warn-no-linker-script-specified:
 	@echo 'Warning: No linker script specified. Check the linker settings in the build configuration.'
 
-.PHONY: all clean dependents main-build fail-specified-linker-script-missing warn-no-linker-script-specified
+.PHONY: all clean dependents fail-specified-linker-script-missing warn-no-linker-script-specified
 
 -include ../makefile.targets
