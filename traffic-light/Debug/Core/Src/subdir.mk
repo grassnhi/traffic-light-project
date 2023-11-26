@@ -10,7 +10,7 @@ C_SRCS += \
 ../Core/Src/displayLED.c \
 ../Core/Src/fsm_automatic.c \
 ../Core/Src/fsm_pedestrian.c \
-../Core/Src/fsm_turning.c \
+../Core/Src/fsm_tuning.c \
 ../Core/Src/global.c \
 ../Core/Src/input_reading.c \
 ../Core/Src/main.c \
@@ -27,7 +27,7 @@ OBJS += \
 ./Core/Src/displayLED.o \
 ./Core/Src/fsm_automatic.o \
 ./Core/Src/fsm_pedestrian.o \
-./Core/Src/fsm_turning.o \
+./Core/Src/fsm_tuning.o \
 ./Core/Src/global.o \
 ./Core/Src/input_reading.o \
 ./Core/Src/main.o \
@@ -44,7 +44,7 @@ C_DEPS += \
 ./Core/Src/displayLED.d \
 ./Core/Src/fsm_automatic.d \
 ./Core/Src/fsm_pedestrian.d \
-./Core/Src/fsm_turning.d \
+./Core/Src/fsm_tuning.d \
 ./Core/Src/global.d \
 ./Core/Src/input_reading.d \
 ./Core/Src/main.d \

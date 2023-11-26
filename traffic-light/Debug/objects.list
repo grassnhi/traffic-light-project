@@ -3,7 +3,7 @@
 "./Core/Src/displayLED.o"
 "./Core/Src/fsm_automatic.o"
 "./Core/Src/fsm_pedestrian.o"
-"./Core/Src/fsm_turning.o"
+"./Core/Src/fsm_tuning.o"
 "./Core/Src/global.o"
 "./Core/Src/input_reading.o"
 "./Core/Src/main.o"

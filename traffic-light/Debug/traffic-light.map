@@ -493,91 +493,91 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/fsm_pedestrian.o
  .debug_macro   0x0000000000000000       0x10 ./Core/Src/fsm_pedestrian.o
  .debug_macro   0x0000000000000000       0x88 ./Core/Src/fsm_pedestrian.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .group         0x0000000000000000        0xc ./Core/Src/fsm_turning.o
- .text          0x0000000000000000        0x0 ./Core/Src/fsm_turning.o
- .data          0x0000000000000000        0x0 ./Core/Src/fsm_turning.o
- .bss           0x0000000000000000        0x0 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0xa9c ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x21b ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x2e ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x22 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x22 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x8e ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x51 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x103 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x6a ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x1df ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x1c ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x22 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0xc3 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0xd23 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000     0xe09e ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x6d ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000     0x348d ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x174 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x5c ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x5bc ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x289 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x1cb ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x114 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x1b2 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x27 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x136 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x1bc ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x34 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x3c ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x57 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x87 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x240 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x140 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x8ed ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000      0x28e ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x83 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x94 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x1c ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x10 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x10 ./Core/Src/fsm_turning.o
- .debug_macro   0x0000000000000000       0x88 ./Core/Src/fsm_turning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm_tuning.o
+ .text          0x0000000000000000        0x0 ./Core/Src/fsm_tuning.o
+ .data          0x0000000000000000        0x0 ./Core/Src/fsm_tuning.o
+ .bss           0x0000000000000000        0x0 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0xa9c ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x21b ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x2e ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x8e ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x51 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x103 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x6a ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x1df ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0xc3 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0xd23 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000     0xe09e ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x6d ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000     0x348d ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x174 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x5c ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x5bc ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x289 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x1cb ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x114 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x1b2 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x27 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x136 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x1bc ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x34 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x3c ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x57 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x87 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x240 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x140 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x8ed ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000      0x28e ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x83 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x94 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/fsm_tuning.o
+ .debug_macro   0x0000000000000000       0x88 ./Core/Src/fsm_tuning.o
  .group         0x0000000000000000        0xc ./Core/Src/global.o
  .group         0x0000000000000000        0xc ./Core/Src/global.o
  .group         0x0000000000000000        0xc ./Core/Src/global.o
@@ -3181,7 +3181,7 @@ LOAD ./Core/Src/buzzer_processing.o
 LOAD ./Core/Src/displayLED.o
 LOAD ./Core/Src/fsm_automatic.o
 LOAD ./Core/Src/fsm_pedestrian.o
-LOAD ./Core/Src/fsm_turning.o
+LOAD ./Core/Src/fsm_tuning.o
 LOAD ./Core/Src/global.o
 LOAD ./Core/Src/input_reading.o
 LOAD ./Core/Src/main.o
@@ -3270,7 +3270,7 @@ LOAD e:/downloaded/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.
                 0x0000000008000854      0x114 ./Core/Src/fsm_pedestrian.o
                 0x0000000008000854                fsm_pedestrian_run
  .text.fsm_turning_run
-                0x0000000008000968      0x25c ./Core/Src/fsm_turning.o
+                0x0000000008000968      0x25c ./Core/Src/fsm_tuning.o
                 0x0000000008000968                fsm_turning_run
  .text.isButtonPressed
                 0x0000000008000bc4       0x3c ./Core/Src/input_reading.o
@@ -3850,7 +3850,7 @@ LOAD e:/downloaded/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.
  .ARM.attributes
                 0x00000000000000fe       0x2d ./Core/Src/fsm_pedestrian.o
  .ARM.attributes
-                0x000000000000012b       0x2d ./Core/Src/fsm_turning.o
+                0x000000000000012b       0x2d ./Core/Src/fsm_tuning.o
  .ARM.attributes
                 0x0000000000000158       0x33 ./Core/Src/global.o
  .ARM.attributes
@@ -3933,7 +3933,7 @@ LOAD e:/downloaded/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.
  .debug_info    0x0000000000001e96      0xba3 ./Core/Src/displayLED.o
  .debug_info    0x0000000000002a39      0xab2 ./Core/Src/fsm_automatic.o
  .debug_info    0x00000000000034eb      0xb47 ./Core/Src/fsm_pedestrian.o
- .debug_info    0x0000000000004032      0xab0 ./Core/Src/fsm_turning.o
+ .debug_info    0x0000000000004032      0xab0 ./Core/Src/fsm_tuning.o
  .debug_info    0x0000000000004ae2      0xb2e ./Core/Src/global.o
  .debug_info    0x0000000000005610      0xc6f ./Core/Src/input_reading.o
  .debug_info    0x000000000000627f     0x1052 ./Core/Src/main.o
@@ -3957,7 +3957,7 @@ LOAD e:/downloaded/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.
  .debug_abbrev  0x00000000000003b4      0x1b8 ./Core/Src/displayLED.o
  .debug_abbrev  0x000000000000056c      0x198 ./Core/Src/fsm_automatic.o
  .debug_abbrev  0x0000000000000704      0x189 ./Core/Src/fsm_pedestrian.o
- .debug_abbrev  0x000000000000088d      0x193 ./Core/Src/fsm_turning.o
+ .debug_abbrev  0x000000000000088d      0x193 ./Core/Src/fsm_tuning.o
  .debug_abbrev  0x0000000000000a20      0x173 ./Core/Src/global.o
  .debug_abbrev  0x0000000000000b93      0x219 ./Core/Src/input_reading.o
  .debug_abbrev  0x0000000000000dac      0x2ed ./Core/Src/main.o
@@ -3987,7 +3987,7 @@ LOAD e:/downloaded/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.
  .debug_aranges
                 0x00000000000000a0       0x20 ./Core/Src/fsm_pedestrian.o
  .debug_aranges
-                0x00000000000000c0       0x20 ./Core/Src/fsm_turning.o
+                0x00000000000000c0       0x20 ./Core/Src/fsm_tuning.o
  .debug_aranges
                 0x00000000000000e0       0x18 ./Core/Src/global.o
  .debug_aranges
@@ -4027,7 +4027,7 @@ LOAD e:/downloaded/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.
  .debug_ranges  0x0000000000000028       0x20 ./Core/Src/displayLED.o
  .debug_ranges  0x0000000000000048       0x18 ./Core/Src/fsm_automatic.o
  .debug_ranges  0x0000000000000060       0x10 ./Core/Src/fsm_pedestrian.o
- .debug_ranges  0x0000000000000070       0x10 ./Core/Src/fsm_turning.o
+ .debug_ranges  0x0000000000000070       0x10 ./Core/Src/fsm_tuning.o
  .debug_ranges  0x0000000000000080       0x28 ./Core/Src/input_reading.o
  .debug_ranges  0x00000000000000a8       0x50 ./Core/Src/main.o
  .debug_ranges  0x00000000000000f8       0x28 ./Core/Src/software_timer.o
@@ -4124,7 +4124,7 @@ LOAD e:/downloaded/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.
  .debug_macro   0x0000000000016f35      0x206 ./Core/Src/displayLED.o
  .debug_macro   0x000000000001713b      0x20a ./Core/Src/fsm_automatic.o
  .debug_macro   0x0000000000017345      0x211 ./Core/Src/fsm_pedestrian.o
- .debug_macro   0x0000000000017556      0x206 ./Core/Src/fsm_turning.o
+ .debug_macro   0x0000000000017556      0x206 ./Core/Src/fsm_tuning.o
  .debug_macro   0x000000000001775c      0x206 ./Core/Src/global.o
  .debug_macro   0x0000000000017962      0x21e ./Core/Src/input_reading.o
  .debug_macro   0x0000000000017b80      0x206 ./Core/Src/main.o
@@ -4142,31 +4142,31 @@ LOAD e:/downloaded/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.
  .debug_macro   0x0000000000018f64      0x1a3 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
  .debug_macro   0x0000000000019107      0x1a4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
 
-.debug_line     0x0000000000000000    0x10741
- .debug_line    0x0000000000000000      0x91a ./Core/Src/USART.o
- .debug_line    0x000000000000091a      0x76d ./Core/Src/buzzer_processing.o
- .debug_line    0x0000000000001087      0x7e8 ./Core/Src/displayLED.o
- .debug_line    0x000000000000186f      0x7ee ./Core/Src/fsm_automatic.o
- .debug_line    0x000000000000205d      0x7c8 ./Core/Src/fsm_pedestrian.o
- .debug_line    0x0000000000002825      0x7fd ./Core/Src/fsm_turning.o
- .debug_line    0x0000000000003022      0x716 ./Core/Src/global.o
- .debug_line    0x0000000000003738      0x834 ./Core/Src/input_reading.o
- .debug_line    0x0000000000003f6c      0x946 ./Core/Src/main.o
- .debug_line    0x00000000000048b2      0x100 ./Core/Src/software_timer.o
- .debug_line    0x00000000000049b2      0x817 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_line    0x00000000000051c9      0x82c ./Core/Src/stm32f1xx_it.o
- .debug_line    0x00000000000059f5      0x520 ./Core/Src/sysmem.o
- .debug_line    0x0000000000005f15      0x71b ./Core/Src/system_stm32f1xx.o
- .debug_line    0x0000000000006630       0x86 ./Core/Startup/startup_stm32f103rbtx.o
- .debug_line    0x00000000000066b6      0x948 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_line    0x0000000000006ffe      0xb30 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_line    0x0000000000007b2e      0x9e1 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_line    0x000000000000850f      0xd54 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
- .debug_line    0x0000000000009263     0x33c7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
- .debug_line    0x000000000000c62a     0x189e ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
- .debug_line    0x000000000000dec8     0x2879 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
+.debug_line     0x0000000000000000    0x10735
+ .debug_line    0x0000000000000000      0x919 ./Core/Src/USART.o
+ .debug_line    0x0000000000000919      0x76c ./Core/Src/buzzer_processing.o
+ .debug_line    0x0000000000001085      0x7e7 ./Core/Src/displayLED.o
+ .debug_line    0x000000000000186c      0x7ed ./Core/Src/fsm_automatic.o
+ .debug_line    0x0000000000002059      0x7c7 ./Core/Src/fsm_pedestrian.o
+ .debug_line    0x0000000000002820      0x7fb ./Core/Src/fsm_tuning.o
+ .debug_line    0x000000000000301b      0x715 ./Core/Src/global.o
+ .debug_line    0x0000000000003730      0x833 ./Core/Src/input_reading.o
+ .debug_line    0x0000000000003f63      0x945 ./Core/Src/main.o
+ .debug_line    0x00000000000048a8      0x100 ./Core/Src/software_timer.o
+ .debug_line    0x00000000000049a8      0x816 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_line    0x00000000000051be      0x82b ./Core/Src/stm32f1xx_it.o
+ .debug_line    0x00000000000059e9      0x520 ./Core/Src/sysmem.o
+ .debug_line    0x0000000000005f09      0x71b ./Core/Src/system_stm32f1xx.o
+ .debug_line    0x0000000000006624       0x86 ./Core/Startup/startup_stm32f103rbtx.o
+ .debug_line    0x00000000000066aa      0x948 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_line    0x0000000000006ff2      0xb30 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_line    0x0000000000007b22      0x9e1 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_line    0x0000000000008503      0xd54 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_line    0x0000000000009257     0x33c7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+ .debug_line    0x000000000000c61e     0x189e ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+ .debug_line    0x000000000000debc     0x2879 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
 
-.debug_str      0x0000000000000000    0x8b754
+.debug_str      0x0000000000000000    0x8b753
  .debug_str     0x0000000000000000    0x87dc0 ./Core/Src/USART.o
                                       0x8825c (size before relaxing)
  .debug_str     0x0000000000087dc0      0x65e ./Core/Src/buzzer_processing.o
@@ -4177,39 +4177,39 @@ LOAD e:/downloaded/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.
                                       0x841bc (size before relaxing)
  .debug_str     0x00000000000884c6       0x44 ./Core/Src/fsm_pedestrian.o
                                       0x841dc (size before relaxing)
- .debug_str     0x000000000008850a       0x2a ./Core/Src/fsm_turning.o
-                                      0x841a5 (size before relaxing)
- .debug_str     0x0000000000088534       0x15 ./Core/Src/global.o
+ .debug_str     0x000000000008850a       0x29 ./Core/Src/fsm_tuning.o
+                                      0x841a4 (size before relaxing)
+ .debug_str     0x0000000000088533       0x15 ./Core/Src/global.o
                                       0x84190 (size before relaxing)
- .debug_str     0x0000000000088549      0x103 ./Core/Src/input_reading.o
+ .debug_str     0x0000000000088548      0x103 ./Core/Src/input_reading.o
                                       0x8429b (size before relaxing)
- .debug_str     0x000000000008864c      0x36d ./Core/Src/main.o
+ .debug_str     0x000000000008864b      0x36d ./Core/Src/main.o
                                       0x8454c (size before relaxing)
- .debug_str     0x00000000000889b9       0x48 ./Core/Src/software_timer.o
+ .debug_str     0x00000000000889b8       0x48 ./Core/Src/software_timer.o
                                        0x2e06 (size before relaxing)
- .debug_str     0x0000000000088a01      0x32c ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_str     0x0000000000088a00      0x32c ./Core/Src/stm32f1xx_hal_msp.o
                                       0x845ac (size before relaxing)
- .debug_str     0x0000000000088d2d       0xdd ./Core/Src/stm32f1xx_it.o
+ .debug_str     0x0000000000088d2c       0xdd ./Core/Src/stm32f1xx_it.o
                                       0x84258 (size before relaxing)
- .debug_str     0x0000000000088e0a      0x4e9 ./Core/Src/sysmem.o
+ .debug_str     0x0000000000088e09      0x4e9 ./Core/Src/sysmem.o
                                        0x6256 (size before relaxing)
- .debug_str     0x00000000000892f3       0x52 ./Core/Src/system_stm32f1xx.o
+ .debug_str     0x00000000000892f2       0x52 ./Core/Src/system_stm32f1xx.o
                                       0x836ae (size before relaxing)
- .debug_str     0x0000000000089345       0x36 ./Core/Startup/startup_stm32f103rbtx.o
+ .debug_str     0x0000000000089344       0x36 ./Core/Startup/startup_stm32f103rbtx.o
                                          0x6a (size before relaxing)
- .debug_str     0x000000000008937b      0x304 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_str     0x000000000008937a      0x304 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
                                       0x83d3f (size before relaxing)
- .debug_str     0x000000000008967f      0x300 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_str     0x000000000008967e      0x300 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
                                       0x83d47 (size before relaxing)
- .debug_str     0x000000000008997f      0x31f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_str     0x000000000008997e      0x31f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
                                       0x83a72 (size before relaxing)
- .debug_str     0x0000000000089c9e      0x24f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_str     0x0000000000089c9d      0x24f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
                                       0x83aab (size before relaxing)
- .debug_str     0x0000000000089eed      0xd73 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+ .debug_str     0x0000000000089eec      0xd73 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
                                       0x84a84 (size before relaxing)
- .debug_str     0x000000000008ac60      0x4ee ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+ .debug_str     0x000000000008ac5f      0x4ee ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
                                       0x84235 (size before relaxing)
- .debug_str     0x000000000008b14e      0x606 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
+ .debug_str     0x000000000008b14d      0x606 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
                                       0x84103 (size before relaxing)
 
 .comment        0x0000000000000000       0x53
@@ -4219,7 +4219,7 @@ LOAD e:/downloaded/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.
  .comment       0x0000000000000053       0x54 ./Core/Src/displayLED.o
  .comment       0x0000000000000053       0x54 ./Core/Src/fsm_automatic.o
  .comment       0x0000000000000053       0x54 ./Core/Src/fsm_pedestrian.o
- .comment       0x0000000000000053       0x54 ./Core/Src/fsm_turning.o
+ .comment       0x0000000000000053       0x54 ./Core/Src/fsm_tuning.o
  .comment       0x0000000000000053       0x54 ./Core/Src/global.o
  .comment       0x0000000000000053       0x54 ./Core/Src/input_reading.o
  .comment       0x0000000000000053       0x54 ./Core/Src/main.o
@@ -4242,7 +4242,7 @@ LOAD e:/downloaded/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.
  .debug_frame   0x0000000000000090       0x7c ./Core/Src/displayLED.o
  .debug_frame   0x000000000000010c       0x5c ./Core/Src/fsm_automatic.o
  .debug_frame   0x0000000000000168       0x2c ./Core/Src/fsm_pedestrian.o
- .debug_frame   0x0000000000000194       0x3c ./Core/Src/fsm_turning.o
+ .debug_frame   0x0000000000000194       0x3c ./Core/Src/fsm_tuning.o
  .debug_frame   0x00000000000001d0       0xac ./Core/Src/input_reading.o
  .debug_frame   0x000000000000027c      0x138 ./Core/Src/main.o
  .debug_frame   0x00000000000003b4       0xac ./Core/Src/software_timer.o
