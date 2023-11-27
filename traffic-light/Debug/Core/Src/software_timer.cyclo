@@ -1,0 +1,5 @@
+software_timer.c:17:5:getFlagTimer	3
+software_timer.c:27:6:setTimer	1
+software_timer.c:33:6:clearTimer	1
+software_timer.c:38:6:clearAllTimer	2
+software_timer.c:45:6:timerRun	3
