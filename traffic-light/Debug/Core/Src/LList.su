@@ -1,0 +1,5 @@
+../Core/Src/LList.c:9:14:createNode	24	static
+../Core/Src/LList.c:20:6:addTask	32	static
+../Core/Src/LList.c:52:6:deleteTask	24	static
+../Core/Src/LList.c:60:6:clearList	24	static
+../Core/Src/LList.c:68:6:deleteTaskID	24	static

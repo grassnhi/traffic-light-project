@@ -14,4 +14,8 @@
 
 void displayUART(int counter, UART_HandleTypeDef huart2);
 
+<<<<<<< HEAD
 #endif /* INC_USART_H_ */
+=======
+#endif /* INC_USART_H_ */
+>>>>>>> 78342df16a33c57aafa680dd38bdd13cadc1b7b1

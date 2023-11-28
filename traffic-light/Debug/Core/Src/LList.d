@@ -1,6 +1,5 @@
-Core/Src/fsm_pedestrian.o: ../Core/Src/fsm_pedestrian.c \
- ../Core/Inc/fsm_pedestrian.h ../Core/Inc/main.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+Core/Src/LList.o: ../Core/Src/LList.c ../Core/Inc/LList.h \
+ ../Core/Inc/main.h ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -31,7 +30,7 @@ Core/Src/fsm_pedestrian.o: ../Core/Src/fsm_pedestrian.c \
  ../Core/Inc/software_timer.h ../Core/Inc/LList.h \
  ../Core/Inc/buzzer_processing.h ../Core/Inc/fsm_main.h \
  ../Core/Inc/fsm_manual.h
-../Core/Inc/fsm_pedestrian.h:
+../Core/Inc/LList.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
