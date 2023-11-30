@@ -1,3 +1,5 @@
-software_timer.c:15:6:setTimer	16	static
-software_timer.c:20:6:clearTimer	16	static
-software_timer.c:25:6:timerRun	16	static
+software_timer.c:17:5:getFlagTimer	16	static
+software_timer.c:27:6:setTimer	16	static
+software_timer.c:33:6:clearTimer	16	static
+software_timer.c:38:6:clearAllTimer	16	static
+software_timer.c:45:6:timerRun	8	static

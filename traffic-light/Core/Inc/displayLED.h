@@ -8,7 +8,6 @@
 #ifndef INC_DISPLAYLED_H_
 #define INC_DISPLAYLED_H_
 
-#include "global.h"
 #include "main.h"
 
 void traffic_light(int color);

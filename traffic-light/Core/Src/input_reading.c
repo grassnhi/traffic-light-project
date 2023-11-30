@@ -21,7 +21,6 @@ static uint16_t BUTTON_PIN[NO_OF_BUTTONS] = {BT0_Pin, BT1_Pin, BT2_Pin, BT3_Pin}
 static int TimeOutForKeyPress[NO_OF_BUTTONS];
 static int button_flag[NO_OF_BUTTONS];
 
-
 void buttonInit(){
 	for(int i = 0; i < NO_OF_BUTTONS; i++){
 		KeyReg0[i] = NORMAL_STATE;
@@ -64,12 +63,6 @@ void getKeyInput(){
 			TimeOutForKeyPress[i] = DURATION_FOR_AUTO_INCREASING;
 			subKeyProcess(i);
 		  }
-		}else{
-		   TimeOutForKeyPress[i] --;
-			if (TimeOutForKeyPress[i] == 0){
-				TimeOutForKeyPress[i] = DURATION_FOR_AUTO_INCREASING;
-				subKeyProcess(i);
-			}
 		}
 		}
 	}

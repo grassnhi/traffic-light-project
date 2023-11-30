@@ -5,46 +5,67 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Core/Src/USART.c \
+../Core/Src/buzzer_processing.c \
 ../Core/Src/displayLED.c \
 ../Core/Src/fsm_automatic.c \
+../Core/Src/fsm_main.c \
+../Core/Src/fsm_manual.c \
+../Core/Src/fsm_pedestrian.c \
+../Core/Src/fsm_tuning.c \
 ../Core/Src/global.c \
 ../Core/Src/input_reading.c \
 ../Core/Src/main.c \
+../Core/Src/scheduler.c \
 ../Core/Src/software_timer.c \
 ../Core/Src/stm32f1xx_hal_msp.c \
 ../Core/Src/stm32f1xx_it.c \
 ../Core/Src/syscalls.c \
 ../Core/Src/sysmem.c \
 ../Core/Src/system_stm32f1xx.c \
-../Core/Src/usart.c 
+../Core/Src/timer_llist.c 
 
 OBJS += \
+./Core/Src/USART.o \
+./Core/Src/buzzer_processing.o \
 ./Core/Src/displayLED.o \
 ./Core/Src/fsm_automatic.o \
+./Core/Src/fsm_main.o \
+./Core/Src/fsm_manual.o \
+./Core/Src/fsm_pedestrian.o \
+./Core/Src/fsm_tuning.o \
 ./Core/Src/global.o \
 ./Core/Src/input_reading.o \
 ./Core/Src/main.o \
+./Core/Src/scheduler.o \
 ./Core/Src/software_timer.o \
 ./Core/Src/stm32f1xx_hal_msp.o \
 ./Core/Src/stm32f1xx_it.o \
 ./Core/Src/syscalls.o \
 ./Core/Src/sysmem.o \
 ./Core/Src/system_stm32f1xx.o \
-./Core/Src/usart.o 
+./Core/Src/timer_llist.o 
 
 C_DEPS += \
+./Core/Src/USART.d \
+./Core/Src/buzzer_processing.d \
 ./Core/Src/displayLED.d \
 ./Core/Src/fsm_automatic.d \
+./Core/Src/fsm_main.d \
+./Core/Src/fsm_manual.d \
+./Core/Src/fsm_pedestrian.d \
+./Core/Src/fsm_tuning.d \
 ./Core/Src/global.d \
 ./Core/Src/input_reading.d \
 ./Core/Src/main.d \
+./Core/Src/scheduler.d \
 ./Core/Src/software_timer.d \
 ./Core/Src/stm32f1xx_hal_msp.d \
 ./Core/Src/stm32f1xx_it.d \
 ./Core/Src/syscalls.d \
 ./Core/Src/sysmem.d \
 ./Core/Src/system_stm32f1xx.d \
-./Core/Src/usart.d 
+./Core/Src/timer_llist.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

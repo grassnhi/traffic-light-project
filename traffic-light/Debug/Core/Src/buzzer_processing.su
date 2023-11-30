@@ -1,2 +1,2 @@
-../Core/Src/buzzer_processing.c:69:6:buzzerRun	4	static
-../Core/Src/buzzer_processing.c:89:6:buzzerStop	4	static
+buzzer_processing.c:18:6:buzzerRun	8	static
+buzzer_processing.c:27:6:buzzerStop	4	static

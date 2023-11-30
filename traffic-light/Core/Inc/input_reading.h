@@ -9,13 +9,10 @@
 #define INC_INPUT_READING_H_
 
 #include "main.h"
-#include "software_timer.h"
-#include "global.h"
 
 #define NORMAL_STATE SET
 #define PRESSED_STATE RESET
 #define NO_OF_BUTTONS 4
-extern int button1_flag[NO_OF_BUTTONS];
 
 
 void getKeyInput();

@@ -18,12 +18,7 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
-#include "usart.h"
-#include "global.h"
-#include "displayLED.h"
-#include "input_reading.h"
-#include "fsm_automatic.h"
-#include "software_timer.h"
+
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __MAIN_H
 #define __MAIN_H
@@ -34,7 +29,18 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx_hal.h"
-
+#include "usart.h"
+#include "global.h"
+#include "displayLED.h"
+#include <fsm_tuning.h>
+#include "input_reading.h"
+#include "fsm_automatic.h"
+#include "fsm_pedestrian.h"
+#include "software_timer.h"
+#include "buzzer_processing.h"
+#include "fsm_main.h"
+#include "fsm_manual.h"
+#include "scheduler.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -54,6 +60,8 @@ extern "C" {
 /* USER CODE BEGIN EM */
 
 /* USER CODE END EM */
+
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
@@ -87,6 +95,8 @@ void Error_Handler(void);
 #define TLIGHT21_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 extern UART_HandleTypeDef huart2;
+extern TIM_HandleTypeDef htim2;
+extern TIM_HandleTypeDef htim3;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

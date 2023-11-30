@@ -12,19 +12,19 @@
 
 #define INIT				0
 
-#define MODE1				1
+#define AUTO				1
 #define RED1_GREEN2	        11
 #define RED1_AMBER2	        12
 #define GREEN1_RED2	        13
 #define	AMBER1_RED2	        14
 
-#define MODE2				2
+#define MANUAL				2
 #define MAN_GREEN1			21
 #define MAN_AMBER1			22
 #define MAN_GREEN2			23
 #define	MAN_AMBER2			24
 
-#define MODE3				3
+#define TURNING				3
 #define AUTO_AMBER			31
 #define ADJ_AMBER			32
 #define AUTO_GREEN			33
@@ -42,6 +42,7 @@
 extern int status;
 extern int ped_status;
 extern int current_state;
+extern int turn_state;
 
 extern int RED;
 extern int AMBER;
@@ -49,6 +50,7 @@ extern int GREEN;
 
 extern int counter1;
 extern int counter2;
+extern int counter;
 
 extern char str[50];
 extern uint8_t temp;
