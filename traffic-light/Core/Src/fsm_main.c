@@ -14,12 +14,12 @@ void fsm(){
 		traffic_light(INIT);
 		ped_status = PED_OFF;
 		clearAllTimer();
-		setTimer(0, GREEN * 1000);	// Timer RED1_GREEN2
-		setTimer(2, 1000);			// Timer UART
+		fsm_automatic_init(GREEN2);
 		status = AUTO;
 		break;
 	case AUTO:
 		fsm_automatic_run();
+		fsm_pedestrian_run();
 		if(isButtonPressed(0) == 1){
 			clearAllTimer();
 			status = MANUAL;
@@ -36,6 +36,7 @@ void fsm(){
 
 		}else if(isButtonPressed(2) == 1){
 			status = AUTO;
+			fsm_automatic_init(current_state);
 		}
 		break;
 	case TURNING:

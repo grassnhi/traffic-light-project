@@ -11,12 +11,7 @@
 #include "main.h"
 
 #define INIT				0
-#define AUTO				1
-#define MANUAL				2
-#define TURNING				3
 
-<<<<<<< HEAD
-=======
 #define AUTO				1
 #define RED1_GREEN2	        11
 #define RED1_AMBER2	        12
@@ -30,15 +25,14 @@
 #define	MAN_AMBER2			24
 
 #define TURNING				3
->>>>>>> Tuan
 #define AUTO_AMBER			31
 #define ADJ_AMBER			32
 #define AUTO_GREEN			33
 #define ADJ_GREEN			34
 
-#define PED_OFF             40
-#define PED_GREEN			41
-#define PED_RED				42
+#define PED_OFF             41
+#define PED_GREEN			42
+#define PED_RED				43
 
 #define GREEN1			    51
 #define AMBER1			    52

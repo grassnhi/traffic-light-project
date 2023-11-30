@@ -9,8 +9,7 @@
 #include "stdio.h"
 #include "main.h"
 
-void displayUART(int counter, UART_HandleTypeDef huart2) {
-	int t = counter / 10;
-	int u = counter % 10;
-	HAL_UART_Transmit(&huart2, (void*)str, sprintf(str, "!7SEG1=%u%u#\r\n", t, u), 1000);
+void displayUART(int counter1, int counter2, UART_HandleTypeDef huart2) {
+	sprintf(str, "!7SEG1=%d \t 7SEG2=%d# \r\n", counter1, counter2);
+	HAL_UART_Transmit(&huart2, (void*)str, sizeof(str), 100);
 }

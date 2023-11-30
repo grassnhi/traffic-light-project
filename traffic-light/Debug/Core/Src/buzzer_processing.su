@@ -1,0 +1,2 @@
+buzzer_processing.c:18:6:buzzerRun	8	static
+buzzer_processing.c:27:6:buzzerStop	4	static

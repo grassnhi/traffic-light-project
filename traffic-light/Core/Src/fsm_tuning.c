@@ -7,15 +7,13 @@
 
 #include "main.h"
 
-
-
 void fsm_turning_run(int turn_state) {
 	switch(turn_state){
 
 	case AUTO_AMBER:
 		
 
-		if (timer_flag[3] == 1) {
+		if (getFlagTimer(3) == 1) {
 			setTimer(3, 500);
             set_blinky(AUTO_AMBER);
 		}
@@ -23,12 +21,12 @@ void fsm_turning_run(int turn_state) {
 			turn_state = ADJ_AMBER;
             AMBER++;
             RED++;
-            displayUART(AMBER, huart2);
+            displayUART(AMBER, AMBER, huart2);
 		}
 		break;
 
 	case ADJ_AMBER:
-		if (timer_flag[3] == 1) {
+		if (getFlagTimer(3) == 1) {
 			setTimer(3, 500);
             set_blinky(AUTO_AMBER);
 		}
@@ -40,7 +38,7 @@ void fsm_turning_run(int turn_state) {
                 AMBER = 1;
                 RED = AMBER + GREEN;
             }
-            displayUART(AMBER, huart2);
+            displayUART(AMBER, AMBER, huart2);
 		}
 		if(isButtonPressed(2)){
 			turn_state = AUTO_AMBER;
@@ -48,7 +46,7 @@ void fsm_turning_run(int turn_state) {
         break;
 
 	case AUTO_GREEN:
-		if (timer_flag[3] == 1) {
+		if (getFlagTimer(3) == 1) {
 			setTimer(3, 500);
             set_blinky(AUTO_GREEN);
 		}
@@ -56,12 +54,12 @@ void fsm_turning_run(int turn_state) {
 			turn_state = ADJ_GREEN;
             GREEN++;
             RED++;
-            displayUART(GREEN, huart2);
+            displayUART(GREEN, GREEN, huart2);
 		}
 		break;
 
 	case ADJ_GREEN:
-		if (timer_flag[3] == 1) {
+		if (getFlagTimer(3) == 1) {
 			setTimer(3, 500);
             set_blinky(AUTO_AMBER);
 		}
@@ -73,7 +71,7 @@ void fsm_turning_run(int turn_state) {
                 AMBER = 1;
                 RED = AMBER + GREEN;
             }
-            displayUART(AMBER, huart2);
+            displayUART(GREEN, GREEN, huart2);
 		}
 		if(isButtonPressed(2)){
 			turn_state = AUTO_GREEN;
@@ -84,4 +82,3 @@ void fsm_turning_run(int turn_state) {
 		break;
 	}
 }
-

@@ -1,0 +1,2 @@
+fsm_automatic.c:10:6:fsm_automatic_init	16	static
+fsm_automatic.c:43:6:fsm_automatic_run	96	static

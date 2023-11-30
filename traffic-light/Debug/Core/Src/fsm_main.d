@@ -27,8 +27,9 @@ Core/Src/fsm_main.o: ../Core/Src/fsm_main.c ../Core/Inc/fsm_main.h \
  ../Core/Inc/usart.h ../Core/Inc/global.h ../Core/Inc/displayLED.h \
  ../Core/Inc/fsm_tuning.h ../Core/Inc/input_reading.h \
  ../Core/Inc/fsm_automatic.h ../Core/Inc/fsm_pedestrian.h \
- ../Core/Inc/software_timer.h ../Core/Inc/buzzer_processing.h \
- ../Core/Inc/fsm_main.h ../Core/Inc/fsm_manual.h ../Core/Inc/scheduler.h
+ ../Core/Inc/software_timer.h ../Core/Inc/timer_llist.h \
+ ../Core/Inc/buzzer_processing.h ../Core/Inc/fsm_main.h \
+ ../Core/Inc/fsm_manual.h ../Core/Inc/scheduler.h
 
 ../Core/Inc/fsm_main.h:
 
@@ -99,6 +100,8 @@ Core/Src/fsm_main.o: ../Core/Src/fsm_main.c ../Core/Inc/fsm_main.h \
 ../Core/Inc/fsm_pedestrian.h:
 
 ../Core/Inc/software_timer.h:
+
+../Core/Inc/timer_llist.h:
 
 ../Core/Inc/buzzer_processing.h:
 

@@ -84,7 +84,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+  SCH_Init();
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -100,25 +100,23 @@ int main(void)
   MX_TIM3_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-  current_state = GREEN2;
+  // current_state = GREEN2;
   HAL_TIM_Base_Start_IT(&htim2);
-  //HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+  SCH_Add_Task(&timerRun, 0, 10);
+  SCH_Add_Task(&getKeyInput, 10, 10);
+  SCH_Add_Task(&fsm, 10, 10);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-//    setTimer(0, 5000);
-//    //setTimer(2, 1000);
-//    fsm_automatic_init();
-//    ped_status = PED_OFF;
-//    turn_state = AUTO_AMBER;
+
   while (1)
   {
     /* USER CODE END WHILE */
-	  fsm();
-	  //fsm_automatic_run();
-	  //fsm_turning_run(turn_state);
-	  //fsm_pedestrian_run();
+//	  fsm();
+	  SCH_Dispatch_Tasks();
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -226,7 +224,7 @@ static void MX_TIM3_Init(void)
   htim3.Instance = TIM3;
   htim3.Init.Prescaler = 63;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 999;
+  htim3.Init.Period = 9;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -347,8 +345,8 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
 {
 	if(htim->Instance == TIM2){
-		getKeyInput();
-		timerRun();
+
+		SCH_Update();
 	}else if(htim->Instance == TIM3){
 
 	}

@@ -40,5 +40,3 @@ void fsm_manual_run(){
 		break;
 	}
 };
-
-
