@@ -107,18 +107,18 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-    setTimer(0, 5000);
-    //setTimer(2, 1000);
-    fsm_automatic_init();
-    ped_status = PED_OFF;
-    turn_state = AUTO_AMBER;
+//    setTimer(0, 5000);
+//    //setTimer(2, 1000);
+//    fsm_automatic_init();
+//    ped_status = PED_OFF;
+//    turn_state = AUTO_AMBER;
   while (1)
   {
     /* USER CODE END WHILE */
-
-	  fsm_automatic_run();
-	  fsm_turning_run(turn_state);
-	  fsm_pedestrian_run();
+	  fsm();
+	  //fsm_automatic_run();
+	  //fsm_turning_run(turn_state);
+	  //fsm_pedestrian_run();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

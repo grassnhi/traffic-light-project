@@ -9,6 +9,8 @@ C_SRCS += \
 ../Core/Src/buzzer_processing.c \
 ../Core/Src/displayLED.c \
 ../Core/Src/fsm_automatic.c \
+../Core/Src/fsm_main.c \
+../Core/Src/fsm_manual.c \
 ../Core/Src/fsm_pedestrian.c \
 ../Core/Src/fsm_tuning.c \
 ../Core/Src/global.c \
@@ -26,6 +28,8 @@ OBJS += \
 ./Core/Src/buzzer_processing.o \
 ./Core/Src/displayLED.o \
 ./Core/Src/fsm_automatic.o \
+./Core/Src/fsm_main.o \
+./Core/Src/fsm_manual.o \
 ./Core/Src/fsm_pedestrian.o \
 ./Core/Src/fsm_tuning.o \
 ./Core/Src/global.o \
@@ -43,6 +47,8 @@ C_DEPS += \
 ./Core/Src/buzzer_processing.d \
 ./Core/Src/displayLED.d \
 ./Core/Src/fsm_automatic.d \
+./Core/Src/fsm_main.d \
+./Core/Src/fsm_manual.d \
 ./Core/Src/fsm_pedestrian.d \
 ./Core/Src/fsm_tuning.d \
 ./Core/Src/global.d \

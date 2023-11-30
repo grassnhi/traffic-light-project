@@ -28,7 +28,8 @@ Core/Src/displayLED.o: ../Core/Src/displayLED.c ../Core/Inc/main.h \
  ../Core/Inc/displayLED.h ../Core/Inc/fsm_tuning.h \
  ../Core/Inc/input_reading.h ../Core/Inc/fsm_automatic.h \
  ../Core/Inc/fsm_pedestrian.h ../Core/Inc/software_timer.h \
- ../Core/Inc/buzzer_processing.h
+ ../Core/Inc/buzzer_processing.h ../Core/Inc/fsm_main.h \
+ ../Core/Inc/fsm_manual.h
 
 ../Core/Inc/main.h:
 
@@ -101,3 +102,7 @@ Core/Src/displayLED.o: ../Core/Src/displayLED.c ../Core/Inc/main.h \
 ../Core/Inc/software_timer.h:
 
 ../Core/Inc/buzzer_processing.h:
+
+../Core/Inc/fsm_main.h:
+
+../Core/Inc/fsm_manual.h:

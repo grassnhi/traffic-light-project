@@ -15,6 +15,22 @@
 #define MANUAL				2
 #define TURNING				3
 
+<<<<<<< HEAD
+=======
+#define AUTO				1
+#define RED1_GREEN2	        11
+#define RED1_AMBER2	        12
+#define GREEN1_RED2	        13
+#define	AMBER1_RED2	        14
+
+#define MANUAL				2
+#define MAN_GREEN1			21
+#define MAN_AMBER1			22
+#define MAN_GREEN2			23
+#define	MAN_AMBER2			24
+
+#define TURNING				3
+>>>>>>> Tuan
 #define AUTO_AMBER			31
 #define ADJ_AMBER			32
 #define AUTO_GREEN			33

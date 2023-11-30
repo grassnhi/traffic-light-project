@@ -29,9 +29,6 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx_hal.h"
-
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
 #include "usart.h"
 #include "global.h"
 #include "displayLED.h"
@@ -41,6 +38,11 @@ extern "C" {
 #include "fsm_pedestrian.h"
 #include "software_timer.h"
 #include "buzzer_processing.h"
+#include "fsm_main.h"
+#include "fsm_manual.h"
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
