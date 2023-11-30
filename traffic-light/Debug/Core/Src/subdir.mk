@@ -16,6 +16,7 @@ C_SRCS += \
 ../Core/Src/global.c \
 ../Core/Src/input_reading.c \
 ../Core/Src/main.c \
+../Core/Src/scheduler.c \
 ../Core/Src/software_timer.c \
 ../Core/Src/stm32f1xx_hal_msp.c \
 ../Core/Src/stm32f1xx_it.c \
@@ -35,6 +36,7 @@ OBJS += \
 ./Core/Src/global.o \
 ./Core/Src/input_reading.o \
 ./Core/Src/main.o \
+./Core/Src/scheduler.o \
 ./Core/Src/software_timer.o \
 ./Core/Src/stm32f1xx_hal_msp.o \
 ./Core/Src/stm32f1xx_it.o \
@@ -54,6 +56,7 @@ C_DEPS += \
 ./Core/Src/global.d \
 ./Core/Src/input_reading.d \
 ./Core/Src/main.d \
+./Core/Src/scheduler.d \
 ./Core/Src/software_timer.d \
 ./Core/Src/stm32f1xx_hal_msp.d \
 ./Core/Src/stm32f1xx_it.d \

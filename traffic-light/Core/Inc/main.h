@@ -40,6 +40,7 @@ extern "C" {
 #include "buzzer_processing.h"
 #include "fsm_main.h"
 #include "fsm_manual.h"
+#include "scheduler.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 

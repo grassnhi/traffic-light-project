@@ -1,3 +1,0 @@
-displayLED.c:11:6:traffic_light	16	static
-displayLED.c:49:6:set_blinky	16	static
-displayLED.c:84:6:pedestrian_light	16	static
