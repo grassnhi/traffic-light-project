@@ -104,7 +104,10 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim2);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
   /* USER CODE END 2 */
-
+  SCH_Init();
+  SCH_Add_Task(timerRun, 1, 1);
+  SCH_Add_Task(getKeyInput, 1, 1);
+  SCH_Add_Task(fsm, 1, 1);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 //    setTimer(0, 5000);
@@ -115,7 +118,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  fsm();
+//	  fsm();
+	  SCH_Dispatch_Tasks();
 	  //fsm_automatic_run();
 	  //fsm_turning_run(turn_state);
 	  //fsm_pedestrian_run();
@@ -347,8 +351,9 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
 {
 	if(htim->Instance == TIM2){
-		getKeyInput();
-		timerRun();
+		SCH_Update();
+//		getKeyInput();
+//		timerRun();
 	}else if(htim->Instance == TIM3){
 
 	}

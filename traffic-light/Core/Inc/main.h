@@ -40,9 +40,10 @@ extern "C" {
 #include "buzzer_processing.h"
 #include "fsm_main.h"
 #include "fsm_manual.h"
+#include "sched.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+typedef void (*CALLBACK)(void);
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
