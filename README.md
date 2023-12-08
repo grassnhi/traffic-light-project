@@ -31,7 +31,7 @@
 
 ## Timer: 
  * timer_2: 10ms, 
- * timer_3: 1s.
+ * timer_3: 1μs.
 
 ## Button:
  * BT0: Change mode
